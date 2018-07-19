@@ -1,0 +1,72 @@
+2.0.1.0
+  - PoDoFo updated to 0.9.6 release
+  - Correct copy&paste typo in litePDF_AddSignerPEM(), found by aaa945260
+  - ExtTextOut() with no text draws background incorrectly
+  - Add API to Get/Set page rotation
+
+2.0.0.0
+  - Released as an Open Source project
+
+1.3.1.0
+  - Change how signature fields are searched for
+
+1.3.0.0
+  - PoDoFo updated to 0.9.5 release
+  - Fixed an issue with text-only meta file drawing
+  - Added new parameter to LoadFromFile(), LoadFromFileW() and LoadFromData()
+    to support incremental updates
+  - Completely rewritten API for digital signatures, which also allows to prepare
+    signature field or sign an already existing signature field
+  - Digitally sign, using PFX/PEM certificates, with internal hash computation or
+    use a manual hash computation API
+
+1.2.0.0
+  - Fix a use-after-free bug when unsetting ExtPen with a standard NULL pen
+  - PoDoFo updated to 0.9.4 release
+  - Added support for 'inch' unit, beside millimeters. This required
+    an API change for all the functions which expected millimeters.
+    A global GetUnit/SetUnit functions had been added and the C++
+    and Pascal interfaces have also MMToUnit/InchToUnit helper
+    functions and their reverse versions UnitToMM/UnitToInch.
+  - API change in some C++ and Pascal getters to rather return the value,
+    then pass it in an out parameter.
+
+1.1.2.0
+  - Enhance font mapping to better match with the HDC/TCanvas font
+
+1.1.1.0
+  - Added API to create link annotations
+  - Added API to create bookmarks
+  - Changed C++ and Delphi interfaces to load library on demand,
+    not during class creation
+
+1.1.0.0
+  - API related changes
+    * Fonts are embedded by default
+    * Digital signing functions have a new parameter, dateOfSign
+    * Added new API for IncSign (incremental digital signing)
+    * Added new API to get digital signatures content
+  - Updated OpenSSL to 1.0.1h
+  - Updated PoDoFo to 0.9.3
+  - Correct byte-width for color-indexed images
+  - Correct SaveDC/RestoreDC code when also clipping some region
+  - Provide x64 native build
+
+1.0.0.3
+  - Provide extended error messages when available
+  - Do not abort on errors when finishing drawing
+  - Reject create of AES encrypted file-based documents
+    (use memory-based documents instead)
+
+1.0.0.2
+  - Fix text draw positioning precision (it could prevent proper document
+    view under Adobe Reader)
+
+1.0.0.1
+  - Fix a typo in API documentation
+  - Fix missing font issue when subset-embedding in signed documents
+  - Extend Delphi example with other C++ examples converted to Pascal
+  - Force font embedding (subset) for encrypted documents, if not set
+
+1.0.0.0
+  - Initial public release
