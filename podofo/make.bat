@@ -1,0 +1,2 @@
+cmake -DOPENSSL_INCLUDE_DIR=..\..\zpert\src\3rd -DSSL_EAY_DEBUG=..\..\zpert\src\lib -DSSL_EAY_RELEASE=..\..\zpert\src\lib -DPNG_PNG_INCLUDE_DIR=../deps/png/ -DPNG_LIBRARY=../deps/png/ -DZLIB_INCLUDE_DIR=../deps/zlib/ -DZLIB_LIBRARY_RELEASE=../deps/zlib/ -DFREETYPE_INCLUDE_DIR=../deps/freetype/ -DFREETYPE_LIBRARY_RELEASE=../deps/freetype/ -DLIBJPEG_INCLUDE_DIR=../deps/jpeg/ -DLIBJPEG_LIBRARY_RELEASE=../deps/jpeg/ .
+pause

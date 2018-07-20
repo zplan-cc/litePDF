@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\code\2.x\litePDF\podofo\CMakeFiles\eee0d689d37cc22b58b9f25599f1f78b\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{976217AD-69A0-3D6C-8237-A539442FD4C6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
