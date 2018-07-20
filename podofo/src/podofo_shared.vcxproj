@@ -83,7 +83,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\code\2.x\litePDF\podofo;C:\code\2.x\litePDF\deps\jpeg;C:\code\2.x\litePDF\deps\png;C:\code\2.x\litePDF\deps\zlib;C:\code\2.x\litePDF\podofo\src;C:\code\2.x\litePDF\podofo\..\deps\freetype;C:\code\2.x\litePDF\podofo\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..;..\..\deps\jpeg;..\..\deps\png;..\..\deps\zlib;..\..\podofo\src;..\..\deps\freetype;..\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -126,7 +126,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\code\2.x\litePDF\podofo;C:\code\2.x\litePDF\deps\jpeg;C:\code\2.x\litePDF\deps\png;C:\code\2.x\litePDF\deps\zlib;C:\code\2.x\litePDF\podofo\src;C:\code\2.x\litePDF\podofo\..\deps\freetype;C:\code\2.x\litePDF\podofo\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..;..\..\deps\jpeg;..\..\deps\png;..\..\deps\zlib;..\..\podofo\src;..\..\deps\freetype;..\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -169,7 +169,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\code\2.x\litePDF\podofo;C:\code\2.x\litePDF\deps\jpeg;C:\code\2.x\litePDF\deps\png;C:\code\2.x\litePDF\deps\zlib;C:\code\2.x\litePDF\podofo\src;C:\code\2.x\litePDF\podofo\..\deps\freetype;C:\code\2.x\litePDF\podofo\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..;..\..\deps\jpeg;..\..\deps\png;..\..\deps\zlib;..\..\podofo\src;..\..\deps\freetype;..\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -212,7 +212,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\code\2.x\litePDF\podofo;C:\code\2.x\litePDF\deps\jpeg;C:\code\2.x\litePDF\deps\png;C:\code\2.x\litePDF\deps\zlib;C:\code\2.x\litePDF\podofo\src;C:\code\2.x\litePDF\podofo\..\deps\freetype;C:\code\2.x\litePDF\podofo\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..;..\..\deps\jpeg;..\..\deps\png;..\..\deps\zlib;..\..\podofo\src;..\..\deps\freetype;..\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
