@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\code\2.x\litePDF\litePDF\src\CMakeFiles\a3823ca1b556b19484b9b4acfc3eb8bf\uninstall.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\code\2.x\litePDF\litePDF\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\code\2.x\litePDF\litePDF\src\CMakeFiles\uninstall" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{7BD07D7F-6268-3CBF-80F8-0C9584CBFCA3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
