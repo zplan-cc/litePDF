@@ -188,6 +188,7 @@ void PdfFontCID::Init( bool bEmbed, bool bSubset )
         // The FontDescriptor, should be an indirect object:
         m_pDescendantFonts->GetDictionary().AddKey( "FontDescriptor", pDescriptor->Reference() );
         m_pDescendantFonts->GetDictionary().AddKey( "CIDToGIDMap", PdfName("Identity") );
+        CreateWidth(m_pDescendantFonts);
     }
 
     // Setting the FontDescriptor paras:

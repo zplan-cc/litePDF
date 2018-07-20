@@ -158,7 +158,8 @@ void PdfString::setFromWchar_t(const wchar_t* pszString, pdf_long lLen )
 				PODOFO_RAISE_ERROR(ePdfError_OutOfMemory);
 			}
 
-            size_t cnt   = wcstombs(pDest, pszString, lDest);
+            //size_t cnt   = wcstombs(pDest, pszString, lDest);
+            size_t cnt = WideCharToMultiByte(CP_UTF8, 0, pszString, -1, pDest, lDest, NULL, NULL);
             if( cnt != static_cast<size_t>(-1) )
             {
                 // No error

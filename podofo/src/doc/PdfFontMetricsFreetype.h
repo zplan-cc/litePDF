@@ -307,7 +307,6 @@ class PODOFO_DOC_API PdfFontMetricsFreetype : public PdfFontMetrics {
     double        m_dStrikeOutPosition;
 
     PdfRefCountedBuffer m_bufFontData;
-    std::vector<double> m_vecWidth;
 };
 
 // -----------------------------------------------------
