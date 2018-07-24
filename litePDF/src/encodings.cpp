@@ -4153,7 +4153,7 @@ const PdfEncoding *MEncodingsCache::getEncodingForCharSet(BYTE lfCharSet, PdfDoc
    if (lfCharSet == ANSI_CHARSET ||
        lfCharSet == DEFAULT_CHARSET ||
        lfCharSet == OEM_CHARSET) {
-      LOGFONTA lf;
+      LOGFONT lf;
       HGDIOBJ obj = NULL;
 
       if (lfCharSet == ANSI_CHARSET)

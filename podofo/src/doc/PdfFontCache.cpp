@@ -536,8 +536,27 @@ PdfFont* PdfFontCache::GetFont( const LOGFONTW &logFont,
     PdfFont*          pFont;
     std::pair<TISortedFontList,TCISortedFontList> it;
 
+    pdf_long lFontNameLen = wcslen(logFont.lfFaceName);
+    if (lFontNameLen >= LF_FACESIZE)
+        return NULL;
+
+    pdf_long lMaxLen = lFontNameLen * 5;
+    char* pmbFontName = static_cast<char*>(podofo_malloc(lMaxLen));
+    if (!pmbFontName)
+    {
+        PODOFO_RAISE_ERROR(ePdfError_OutOfMemory);
+    }
+
+    //if( wcstombs( pmbFontName, logFont.lfFaceName, lMaxLen ) == static_cast<size_t>(-1) )
+    if (WideCharToMultiByte(CP_UTF8, 0, logFont.lfFaceName, -1, pmbFontName, lMaxLen, NULL, NULL) == static_cast<size_t>(-1))
+    {
+        podofo_free(pmbFontName);
+        PODOFO_RAISE_ERROR_INFO(ePdfError_InternalLogic, "Conversion to multibyte char failed");
+    }
+
+
     it = std::equal_range( m_vecFonts.begin(), m_vecFonts.end(), 
-         TFontCacheElement( logFont.lfFaceName, logFont.lfWeight >= FW_BOLD ? true : false, logFont.lfItalic ? true : false, logFont.lfCharSet == SYMBOL_CHARSET, pEncoding ) );
+         TFontCacheElement(pmbFontName, logFont.lfWeight >= FW_BOLD ? true : false, logFont.lfItalic ? true : false, logFont.lfCharSet == SYMBOL_CHARSET, pEncoding ) );
     if( it.first == it.second )
         return GetWin32Font( it.first, m_vecFonts, logFont, bEmbedd, pEncoding );
     else
@@ -874,7 +893,7 @@ std::string PdfFontCache::GetFontPath( const char* pszFontName, bool bBold, bool
 
 PdfFont* PdfFontCache::CreateFontObject( TISortedFontList itSorted, TSortedFontList & rvecContainer, 
                      PdfFontMetrics* pMetrics, bool bEmbedd, bool bBold, bool bItalic, 
-                     const char* pszFontName, const PdfEncoding * const pEncoding, bool bSubsetting ) 
+                     const pdf_utf8* pszFontName, const PdfEncoding * const pEncoding, bool bSubsetting )
 {
     PdfFont* pFont;
 

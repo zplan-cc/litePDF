@@ -378,7 +378,7 @@ class PODOFO_DOC_API PdfFontCache {
      */
     PdfFont* CreateFontObject( TISortedFontList itSorted, TSortedFontList & vecContainer,
                                PdfFontMetrics* pMetrics, bool bEmbedd, bool bBold, 
-                               bool bItalic, const char* pszFontName, const PdfEncoding * const pEncoding,
+                               bool bItalic, const pdf_utf8* pszFontName, const PdfEncoding * const pEncoding,
 							   bool bSubsetting = false );
 
     /** Create a font subset.

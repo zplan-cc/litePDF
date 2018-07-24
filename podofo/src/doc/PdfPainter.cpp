@@ -555,7 +555,6 @@ void PdfPainter::SetFont( PdfFont* pFont )
     {
         PODOFO_RAISE_ERROR( ePdfError_InvalidHandle );
     }
-
     m_pFont = pFont;
 }
 
