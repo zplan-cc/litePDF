@@ -1,4 +1,4 @@
-# Install script for directory: C:/code/2.x/litePDF/podofo/test/SignatureTest
+# Install script for directory: E:/projects/p1/litePDF/podofo/test/SignatureTest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

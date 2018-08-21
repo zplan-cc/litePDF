@@ -1,4 +1,4 @@
-# Install script for directory: C:/code/2.x/litePDF/podofo/tools/podofoimgextract
+# Install script for directory: E:/projects/p1/litePDF/podofo/tools/podofoimgextract
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,13 +34,13 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/podofo/tools/podofoimgextract/Debug/podofoimgextract.exe")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/podofo/tools/podofoimgextract/Debug/podofoimgextract.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/podofo/tools/podofoimgextract/Release/podofoimgextract.exe")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/podofo/tools/podofoimgextract/Release/podofoimgextract.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/podofo/tools/podofoimgextract/MinSizeRel/podofoimgextract.exe")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/podofo/tools/podofoimgextract/MinSizeRel/podofoimgextract.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/podofo/tools/podofoimgextract/RelWithDebInfo/podofoimgextract.exe")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/podofo/tools/podofoimgextract/RelWithDebInfo/podofoimgextract.exe")
   endif()
 endif()
 

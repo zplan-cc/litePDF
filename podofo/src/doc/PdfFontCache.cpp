@@ -893,7 +893,7 @@ std::string PdfFontCache::GetFontPath( const char* pszFontName, bool bBold, bool
 
 PdfFont* PdfFontCache::CreateFontObject( TISortedFontList itSorted, TSortedFontList & rvecContainer, 
                      PdfFontMetrics* pMetrics, bool bEmbedd, bool bBold, bool bItalic, 
-                     const pdf_utf8* pszFontName, const PdfEncoding * const pEncoding, bool bSubsetting )
+                     const char* pszFontName, const PdfEncoding * const pEncoding, bool bSubsetting )
 {
     PdfFont* pFont;
 
@@ -920,7 +920,7 @@ PdfFont* PdfFontCache::CreateFontObject( TISortedFontList itSorted, TSortedFontL
             element.m_pFont     = pFont;
             element.m_bBold     = pFont->IsBold();
             element.m_bItalic   = pFont->IsItalic();
-            element.m_sFontName = pszFontName;
+            element.m_sFontName = reinterpret_cast<const pdf_utf8*>(pszFontName);
             element.m_pEncoding = pEncoding;
             element.m_bIsSymbolCharset = pMetrics->IsSymbol();
             

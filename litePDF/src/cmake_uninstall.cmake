@@ -1,14 +1,14 @@
-if(NOT EXISTS "C:/code/2.x/litePDF/litePDF/src/install_manifest.txt")
-  message(FATAL_ERROR "Cannot find install manifest: C:/code/2.x/litePDF/litePDF/src/install_manifest.txt")
-endif(NOT EXISTS "C:/code/2.x/litePDF/litePDF/src/install_manifest.txt")
+if(NOT EXISTS "E:/projects/p1/litePDF/litePDF/src/install_manifest.txt")
+  message(FATAL_ERROR "Cannot find install manifest: E:/projects/p1/litePDF/litePDF/src/install_manifest.txt")
+endif(NOT EXISTS "E:/projects/p1/litePDF/litePDF/src/install_manifest.txt")
 
-file(READ "C:/code/2.x/litePDF/litePDF/src/install_manifest.txt" files)
+file(READ "E:/projects/p1/litePDF/litePDF/src/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 foreach(file ${files})
   message(STATUS "Uninstalling $ENV{DESTDIR}${file}")
   if(IS_SYMLINK "$ENV{DESTDIR}${file}" OR EXISTS "$ENV{DESTDIR}${file}")
     exec_program(
-      "C:/Program Files/CMake/bin/cmake.exe" ARGS "-E remove \"$ENV{DESTDIR}${file}\""
+      "D:/Program Files/CMake/bin/cmake.exe" ARGS "-E remove \"$ENV{DESTDIR}${file}\""
       OUTPUT_VARIABLE rm_out
       RETURN_VALUE rm_retval
       )

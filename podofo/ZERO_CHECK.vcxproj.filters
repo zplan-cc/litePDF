@@ -1,13 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\code\2.x\litePDF\podofo\CMakeFiles\1b11c607f8d614a9dc7665defba932b2\generate.stamp.rule">
+    <CustomBuild Include="E:\projects\p1\litePDF\podofo\CMakeFiles\7387f46db2f573ca090a109c6a3decce\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{976217AD-69A0-3D6C-8237-A539442FD4C6}</UniqueIdentifier>
+      <UniqueIdentifier>{2F2BA883-BB3F-3494-942C-1688D3E757CB}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

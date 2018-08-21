@@ -1,4 +1,4 @@
-# Install script for directory: C:/code/2.x/litePDF/podofo/examples
+# Install script for directory: E:/projects/p1/litePDF/podofo/examples
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,8 +34,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/code/2.x/litePDF/podofo/examples/helloworld/cmake_install.cmake")
-  include("C:/code/2.x/litePDF/podofo/examples/helloworld-base14/cmake_install.cmake")
+  include("E:/projects/p1/litePDF/podofo/examples/helloworld/cmake_install.cmake")
+  include("E:/projects/p1/litePDF/podofo/examples/helloworld-base14/cmake_install.cmake")
 
 endif()
 
