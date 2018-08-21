@@ -327,7 +327,6 @@ void PlayMeta2Pdf(HENHMETAFILE emf,
 
       /* Embed font subsets by default, thus readers can show fonts properly */
       if ((drawFlags & (LITEPDF_DRAW_FLAG_EMBED_FONTS_NONE | LITEPDF_DRAW_FLAG_EMBED_FONTS_COMPLETE | LITEPDF_DRAW_FLAG_EMBED_FONTS_SUBSET)) == 0) {
-         //drawFlags |= LITEPDF_DRAW_FLAG_EMBED_FONTS_NONE;
          drawFlags |= LITEPDF_DRAW_FLAG_EMBED_FONTS_SUBSET;
       }
 
@@ -2909,23 +2908,6 @@ static bool selectFont(struct processData *pd)
  
    const PdfEncoding *nativeEncoding = NULL;
 
-   //LOGFONTW lfw;
-   //lfw.lfHeight = lf.lfHeight;
-   //lfw.lfWidth = lf.lfWidth;
-   //lfw.lfEscapement = lf.lfEscapement;
-   //lfw.lfOrientation = lf.lfOrientation;
-   //lfw.lfWeight = lf.lfWeight;
-   //lfw.lfItalic = lf.lfItalic;
-   //lfw.lfUnderline = lf.lfUnderline;
-   //lfw.lfStrikeOut = lf.lfStrikeOut;
-   //lfw.lfCharSet = lf.lfCharSet;
-   //lfw.lfOutPrecision = lf.lfOutPrecision;
-   //lfw.lfClipPrecision = lf.lfClipPrecision;
-   //lfw.lfQuality = lf.lfQuality;
-   //lfw.lfPitchAndFamily = lf.lfPitchAndFamily;
-   //DWORD len = LF_FACESIZE;
-   //AnsiToUnicode(lf.lfFaceName, strlen(lf.lfFaceName), lfw.lfFaceName, &len);
-
    if ((pd->drawFlags & LITEPDF_DRAW_FLAG_SUBSTITUTE_FONTS) != 0) {
       const char *substName = getSubstituteFontName (lf.lfFaceName, lf.lfWeight > 500, lf.lfItalic != FALSE, lf.lfCharSet == SYMBOL_CHARSET);
       if (substName) {
@@ -2939,7 +2921,6 @@ static bool selectFont(struct processData *pd)
 
    if (!font && canEmbedFont && (pd->drawFlags & LITEPDF_DRAW_FLAG_EMBED_FONTS_SUBSET) != 0) {
       // subset fonts are always embedded
-      //font = pd->document->CreateFontSubset(lfw.lfFaceName, lfw.lfWeight > 500, lfw.lfItalic != FALSE, lfw.lfCharSet == SYMBOL_CHARSET, PdfEncodingFactory::GlobalIdentityEncodingInstance());
       font = pd->document->CreateFontSubset(lf.lfFaceName, lf.lfWeight > 500, lf.lfItalic != FALSE, lf.lfCharSet == SYMBOL_CHARSET, PdfEncodingFactory::GlobalIdentityEncodingInstance());
    }
 
