@@ -85,7 +85,7 @@ struct TFontCacheElement {
     TFontCacheElement( const char* pszFontName, bool bBold, bool bItalic, bool bIsSymbolCharset,
 		               const PdfEncoding * const pEncoding )
         : m_pFont(NULL), m_pEncoding( pEncoding ), m_bBold( bBold ), m_bItalic( bItalic ),
-          m_sFontName( reinterpret_cast<const pdf_utf8*>(pszFontName) ), m_bIsSymbolCharset (bIsSymbolCharset)
+          m_sFontName( (pszFontName) ), m_bIsSymbolCharset (bIsSymbolCharset)
     {
     }
 
@@ -378,7 +378,7 @@ class PODOFO_DOC_API PdfFontCache {
      */
     PdfFont* CreateFontObject( TISortedFontList itSorted, TSortedFontList & vecContainer,
                                PdfFontMetrics* pMetrics, bool bEmbedd, bool bBold, 
-                               bool bItalic, const pdf_utf8* pszFontName, const PdfEncoding * const pEncoding,
+                               bool bItalic, const char* pszFontName, const PdfEncoding * const pEncoding,
 							   bool bSubsetting = false );
 
     /** Create a font subset.

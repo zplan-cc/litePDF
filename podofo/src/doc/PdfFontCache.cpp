@@ -488,7 +488,7 @@ PdfFont* PdfFontCache::GetFont( const wchar_t* pszFontName, bool bBold, bool bIt
         PODOFO_RAISE_ERROR(ePdfError_OutOfMemory);
     }
     //if( wcstombs(pmbFontName, pszFontName, lMaxLen) == static_cast<size_t>(-1) )
-    if (WideCharToMultiByte(CP_UTF8, 0, pszFontName, -1, pmbFontName, lMaxLen, NULL, NULL) == static_cast<size_t>(-1))
+    if (WideCharToMultiByte(CP_ACP, 0, pszFontName, -1, pmbFontName, lMaxLen, NULL, NULL) == static_cast<size_t>(-1))
     {
         podofo_free(pmbFontName);
         PODOFO_RAISE_ERROR_INFO(ePdfError_InternalLogic, "Conversion to multibyte char failed");
@@ -548,7 +548,7 @@ PdfFont* PdfFontCache::GetFont( const LOGFONTW &logFont,
     }
 
     //if( wcstombs( pmbFontName, logFont.lfFaceName, lMaxLen ) == static_cast<size_t>(-1) )
-    if (WideCharToMultiByte(CP_UTF8, 0, logFont.lfFaceName, -1, pmbFontName, lMaxLen, NULL, NULL) == static_cast<size_t>(-1))
+    if (WideCharToMultiByte(CP_ACP, 0, logFont.lfFaceName, -1, pmbFontName, lMaxLen, NULL, NULL) == static_cast<size_t>(-1))
     {
         podofo_free(pmbFontName);
         PODOFO_RAISE_ERROR_INFO(ePdfError_InternalLogic, "Conversion to multibyte char failed");
@@ -806,7 +806,7 @@ PdfFont* PdfFontCache::GetWin32Font( TISortedFontList itSorted, TSortedFontList 
     }
 
     //if( wcstombs( pmbFontName, logFont.lfFaceName, lMaxLen ) == static_cast<size_t>(-1) )
-    if (WideCharToMultiByte(CP_UTF8, 0, logFont.lfFaceName, -1, pmbFontName, lMaxLen, NULL, NULL) == static_cast<size_t>(-1))
+    if (WideCharToMultiByte(CP_ACP, 0, logFont.lfFaceName, -1, pmbFontName, lMaxLen, NULL, NULL) == static_cast<size_t>(-1))
     {
         podofo_free( pmbFontName );
         PODOFO_RAISE_ERROR_INFO( ePdfError_InternalLogic, "Conversion to multibyte char failed" );
@@ -893,7 +893,7 @@ std::string PdfFontCache::GetFontPath( const char* pszFontName, bool bBold, bool
 
 PdfFont* PdfFontCache::CreateFontObject( TISortedFontList itSorted, TSortedFontList & rvecContainer, 
                      PdfFontMetrics* pMetrics, bool bEmbedd, bool bBold, bool bItalic, 
-                     const pdf_utf8* pszFontName, const PdfEncoding * const pEncoding, bool bSubsetting )
+                     const char* pszFontName, const PdfEncoding * const pEncoding, bool bSubsetting )
 {
     PdfFont* pFont;
 

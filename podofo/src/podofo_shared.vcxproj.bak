@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8FD4A8A6-94CF-3A3E-8609-026AA7B2F58B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>podofo_shared</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">podofo_shared.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">podofo</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">podofo_shared.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">podofo</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">podofo_shared.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">podofo</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">podofo_shared.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">podofo</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..;..\..\deps\jpeg;..\..\deps\png;..\..\deps\zlib;..\..\podofo\src;..\..\deps\freetype;..\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BUILDING_PODOFO;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR="Debug";podofo_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;BUILDING_PODOFO;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"Debug\";podofo_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..;..\,,\deps\jpeg;..\,,\deps\png;..\,,\deps\zlib;..\src;..\..\deps\freetype;..\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..;..\,,\deps\jpeg;..\,,\deps\png;..\,,\deps\zlib;..\src;..\..\deps\freetype;..\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;ws2_32.lib;../deps/png/.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;ws2_32.lib;../deps/png/.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:../src;$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>Debug/podofo.lib</ImportLibrary>
+      <ProgramDataBaseFile>Debug/podofo.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..;..\..\deps\jpeg;..\..\deps\png;..\..\deps\zlib;..\..\podofo\src;..\..\deps\freetype;..\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILDING_PODOFO;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR="Release";podofo_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILDING_PODOFO;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"Release\";podofo_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..;..\,,\deps\jpeg;..\,,\deps\png;..\,,\deps\zlib;..\src;..\..\deps\freetype;..\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..;..\,,\deps\jpeg;..\,,\deps\png;..\,,\deps\zlib;..\src;..\..\deps\freetype;..\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;ws2_32.lib;../deps/png/.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;ws2_32.lib;../deps/png/.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:../src;$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>Release/podofo.lib</ImportLibrary>
+      <ProgramDataBaseFile>Release/podofo.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..;..\..\deps\jpeg;..\..\deps\png;..\..\deps\zlib;..\..\podofo\src;..\..\deps\freetype;..\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILDING_PODOFO;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR="MinSizeRel";podofo_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILDING_PODOFO;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"MinSizeRel\";podofo_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..;..\,,\deps\jpeg;..\,,\deps\png;..\,,\deps\zlib;..\src;..\..\deps\freetype;..\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..;..\,,\deps\jpeg;..\,,\deps\png;..\,,\deps\zlib;..\src;..\..\deps\freetype;..\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;ws2_32.lib;../deps/png/.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;ws2_32.lib;../deps/png/.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:../src;$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>MinSizeRel/podofo.lib</ImportLibrary>
+      <ProgramDataBaseFile>MinSizeRel/podofo.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..;..\..\deps\jpeg;..\..\deps\png;..\..\deps\zlib;..\..\podofo\src;..\..\deps\freetype;..\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILDING_PODOFO;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR="RelWithDebInfo";podofo_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILDING_PODOFO;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"RelWithDebInfo\";podofo_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..;..\,,\deps\jpeg;..\,,\deps\png;..\,,\deps\zlib;..\src;..\..\deps\freetype;..\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..;..\,,\deps\jpeg;..\,,\deps\png;..\,,\deps\zlib;..\src;..\..\deps\freetype;..\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;ws2_32.lib;../deps/png/.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;ws2_32.lib;../deps/png/.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:../src;$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>RelWithDebInfo/podofo.lib</ImportLibrary>
+      <ProgramDataBaseFile>RelWithDebInfo/podofo.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:.. -BC:.. --check-stamp-file CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CMakeLists.txt;CMakeLists.txt;CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:.. -BC:.. --check-stamp-file CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CMakeLists.txt;CMakeLists.txt;CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:.. -BC:.. --check-stamp-file CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CMakeLists.txt;CMakeLists.txt;CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:.. -BC:.. --check-stamp-file CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CMakeLists.txt;CMakeLists.txt;CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="base\PdfArray.cpp" />
+    <ClCompile Include="base\PdfCanvas.cpp" />
+    <ClCompile Include="base\PdfColor.cpp" />
+    <ClCompile Include="base\PdfContentsTokenizer.cpp" />
+    <ClCompile Include="base\PdfData.cpp" />
+    <ClCompile Include="base\PdfDataType.cpp" />
+    <ClCompile Include="base\PdfDate.cpp" />
+    <ClCompile Include="base\PdfDictionary.cpp" />
+    <ClCompile Include="base\PdfEncoding.cpp" />
+    <ClCompile Include="base\PdfEncodingFactory.cpp" />
+    <ClCompile Include="base\PdfEncrypt.cpp" />
+    <ClCompile Include="base\PdfError.cpp" />
+    <ClCompile Include="base\PdfFileStream.cpp" />
+    <ClCompile Include="base\PdfFilter.cpp" />
+    <ClCompile Include="base\PdfFiltersPrivate.cpp" />
+    <ClCompile Include="base\PdfImmediateWriter.cpp" />
+    <ClCompile Include="base\PdfInputDevice.cpp" />
+    <ClCompile Include="base\PdfInputStream.cpp" />
+    <ClCompile Include="base\PdfLocale.cpp" />
+    <ClCompile Include="base\PdfMemStream.cpp" />
+    <ClCompile Include="base\PdfMemoryManagement.cpp" />
+    <ClCompile Include="base\PdfName.cpp" />
+    <ClCompile Include="base\PdfObject.cpp" />
+    <ClCompile Include="base\PdfObjectStreamParserObject.cpp" />
+    <ClCompile Include="base\PdfOutputDevice.cpp" />
+    <ClCompile Include="base\PdfOutputStream.cpp" />
+    <ClCompile Include="base\PdfParser.cpp" />
+    <ClCompile Include="base\PdfParserObject.cpp" />
+    <ClCompile Include="base\PdfRect.cpp" />
+    <ClCompile Include="base\PdfRefCountedBuffer.cpp" />
+    <ClCompile Include="base\PdfRefCountedInputDevice.cpp" />
+    <ClCompile Include="base\PdfReference.cpp" />
+    <ClCompile Include="base\PdfStream.cpp" />
+    <ClCompile Include="base\PdfString.cpp" />
+    <ClCompile Include="base\PdfTokenizer.cpp" />
+    <ClCompile Include="base\PdfVariant.cpp" />
+    <ClCompile Include="base\PdfVecObjects.cpp" />
+    <ClCompile Include="base\PdfWriter.cpp" />
+    <ClCompile Include="base\PdfXRef.cpp" />
+    <ClCompile Include="base\PdfXRefStream.cpp" />
+    <ClCompile Include="base\PdfXRefStreamParserObject.cpp" />
+    <ClCompile Include="doc\PdfAcroForm.cpp" />
+    <ClCompile Include="doc\PdfAction.cpp" />
+    <ClCompile Include="doc\PdfAnnotation.cpp" />
+    <ClCompile Include="doc\PdfCMapEncoding.cpp" />
+    <ClCompile Include="doc\PdfContents.cpp" />
+    <ClCompile Include="doc\PdfDestination.cpp" />
+    <ClCompile Include="doc\PdfDifferenceEncoding.cpp" />
+    <ClCompile Include="doc\PdfDocument.cpp" />
+    <ClCompile Include="doc\PdfElement.cpp" />
+    <ClCompile Include="doc\PdfEncodingObjectFactory.cpp" />
+    <ClCompile Include="doc\PdfExtGState.cpp" />
+    <ClCompile Include="doc\PdfField.cpp" />
+    <ClCompile Include="doc\PdfFileSpec.cpp" />
+    <ClCompile Include="doc\PdfFont.cpp" />
+    <ClCompile Include="doc\PdfFontCID.cpp" />
+    <ClCompile Include="doc\PdfFontCache.cpp" />
+    <ClCompile Include="doc\PdfFontConfigWrapper.cpp" />
+    <ClCompile Include="doc\PdfFontFactory.cpp" />
+    <ClCompile Include="doc\PdfFontMetrics.cpp" />
+    <ClCompile Include="doc\PdfFontMetricsBase14.cpp" />
+    <ClCompile Include="doc\PdfFontMetricsFreetype.cpp" />
+    <ClCompile Include="doc\PdfFontMetricsObject.cpp" />
+    <ClCompile Include="doc\PdfFontSimple.cpp" />
+    <ClCompile Include="doc\PdfFontTTFSubset.cpp" />
+    <ClCompile Include="doc\PdfFontTrueType.cpp" />
+    <ClCompile Include="doc\PdfFontType1.cpp" />
+    <ClCompile Include="doc\PdfFontType3.cpp" />
+    <ClCompile Include="doc\PdfFontType1Base14.cpp" />
+    <ClCompile Include="doc\PdfFunction.cpp" />
+    <ClCompile Include="doc\PdfHintStream.cpp" />
+    <ClCompile Include="doc\PdfIdentityEncoding.cpp" />
+    <ClCompile Include="doc\PdfImage.cpp" />
+    <ClCompile Include="doc\PdfInfo.cpp" />
+    <ClCompile Include="doc\PdfMemDocument.cpp" />
+    <ClCompile Include="doc\PdfNamesTree.cpp" />
+    <ClCompile Include="doc\PdfOutlines.cpp" />
+    <ClCompile Include="doc\PdfPage.cpp" />
+    <ClCompile Include="doc\PdfPagesTree.cpp" />
+    <ClCompile Include="doc\PdfPagesTreeCache.cpp" />
+    <ClCompile Include="doc\PdfPainter.cpp" />
+    <ClCompile Include="doc\PdfPainterMM.cpp" />
+    <ClCompile Include="doc\PdfShadingPattern.cpp" />
+    <ClCompile Include="doc\PdfSignOutputDevice.cpp" />
+    <ClCompile Include="doc\PdfSignatureField.cpp" />
+    <ClCompile Include="doc\PdfStreamedDocument.cpp" />
+    <ClCompile Include="doc\PdfTable.cpp" />
+    <ClCompile Include="doc\PdfTilingPattern.cpp" />
+    <ClCompile Include="doc\PdfXObject.cpp" />
+    <ResourceCompile Include="doc\podofo-doc.rc" />
+    <ClInclude Include="podofo-base.h" />
+    <ClInclude Include="podofo.h" />
+    <ClInclude Include="..\podofo_config.h" />
+    <ClInclude Include="base\Pdf3rdPtyForwardDecl.h" />
+    <ClInclude Include="base\PdfArray.h" />
+    <ClInclude Include="base\PdfCanvas.h" />
+    <ClInclude Include="base\PdfColor.h" />
+    <ClInclude Include="base\PdfCompilerCompat.h" />
+    <ClInclude Include="base\PdfCompilerCompatPrivate.h" />
+    <ClInclude Include="base\PdfContentsTokenizer.h" />
+    <ClInclude Include="base\PdfData.h" />
+    <ClInclude Include="base\PdfDataType.h" />
+    <ClInclude Include="base\PdfDate.h" />
+    <ClInclude Include="base\PdfDefines.h" />
+    <ClInclude Include="base\PdfDefinesPrivate.h" />
+    <ClInclude Include="base\PdfDictionary.h" />
+    <ClInclude Include="base\PdfEncoding.h" />
+    <ClInclude Include="base\PdfEncodingFactory.h" />
+    <ClInclude Include="base\PdfEncrypt.h" />
+    <ClInclude Include="base\PdfExtension.h" />
+    <ClInclude Include="base\PdfError.h" />
+    <ClInclude Include="base\PdfFileStream.h" />
+    <ClInclude Include="base\PdfFilter.h" />
+    <ClInclude Include="base\PdfFiltersPrivate.h" />
+    <ClInclude Include="base\PdfImmediateWriter.h" />
+    <ClInclude Include="base\PdfInputDevice.h" />
+    <ClInclude Include="base\PdfInputStream.h" />
+    <ClInclude Include="base\PdfLocale.h" />
+    <ClInclude Include="base\PdfMemStream.h" />
+    <ClInclude Include="base\PdfMemoryManagement.h" />
+    <ClInclude Include="base\PdfName.h" />
+    <ClInclude Include="base\PdfObject.h" />
+    <ClInclude Include="base\PdfObjectStreamParserObject.h" />
+    <ClInclude Include="base\PdfOutputDevice.h" />
+    <ClInclude Include="base\PdfOutputStream.h" />
+    <ClInclude Include="base\PdfParser.h" />
+    <ClInclude Include="base\PdfParserObject.h" />
+    <ClInclude Include="base\PdfRect.h" />
+    <ClInclude Include="base\PdfRefCountedBuffer.h" />
+    <ClInclude Include="base\PdfRefCountedInputDevice.h" />
+    <ClInclude Include="base\PdfReference.h" />
+    <ClInclude Include="base\PdfStream.h" />
+    <ClInclude Include="base\PdfString.h" />
+    <ClInclude Include="base\PdfTokenizer.h" />
+    <ClInclude Include="base\PdfVariant.h" />
+    <ClInclude Include="base\PdfVecObjects.h" />
+    <ClInclude Include="base\PdfVersion.h" />
+    <ClInclude Include="base\PdfWriter.h" />
+    <ClInclude Include="base\PdfXRef.h" />
+    <ClInclude Include="base\PdfXRefStream.h" />
+    <ClInclude Include="base\PdfXRefStreamParserObject.h" />
+    <ClInclude Include="base\podofoapi.h" />
+    <ClInclude Include="base\util\PdfMutex.h" />
+    <ClInclude Include="base\util\PdfMutexImpl_noop.h" />
+    <ClInclude Include="base\util\PdfMutexImpl_win32.h" />
+    <ClInclude Include="base\util\PdfMutexImpl_pthread.h" />
+    <ClInclude Include="base\util\PdfMutexWrapper.h" />
+    <ClInclude Include="doc\PdfAcroForm.h" />
+    <ClInclude Include="doc\PdfAction.h" />
+    <ClInclude Include="doc\PdfAnnotation.h" />
+    <ClInclude Include="doc\PdfCMapEncoding.h" />
+    <ClInclude Include="doc\PdfContents.h" />
+    <ClInclude Include="doc\PdfDestination.h" />
+    <ClInclude Include="doc\PdfDifferenceEncoding.h" />
+    <ClInclude Include="doc\PdfDocument.h" />
+    <ClInclude Include="doc\PdfElement.h" />
+    <ClInclude Include="doc\PdfEncodingObjectFactory.h" />
+    <ClInclude Include="doc\PdfExtGState.h" />
+    <ClInclude Include="doc\PdfField.h" />
+    <ClInclude Include="doc\PdfFileSpec.h" />
+    <ClInclude Include="doc\PdfFont.h" />
+    <ClInclude Include="doc\PdfFontCID.h" />
+    <ClInclude Include="doc\PdfFontCache.h" />
+    <ClInclude Include="doc\PdfFontConfigWrapper.h" />
+    <ClInclude Include="doc\PdfFontFactory.h" />
+    <ClInclude Include="doc\PdfFontFactoryBase14Data.h" />
+    <ClInclude Include="doc\PdfFontMetrics.h" />
+    <ClInclude Include="doc\PdfFontMetricsBase14.h" />
+    <ClInclude Include="doc\PdfFontMetricsFreetype.h" />
+    <ClInclude Include="doc\PdfFontMetricsObject.h" />
+    <ClInclude Include="doc\PdfFontSimple.h" />
+    <ClInclude Include="doc\PdfFontTTFSubset.h" />
+    <ClInclude Include="doc\PdfFontTrueType.h" />
+    <ClInclude Include="doc\PdfFontType1.h" />
+    <ClInclude Include="doc\PdfFontType3.h" />
+    <ClInclude Include="doc\PdfFontType1Base14.h" />
+    <ClInclude Include="doc\PdfFunction.h" />
+    <ClInclude Include="doc\PdfHintStream.h" />
+    <ClInclude Include="doc\PdfIdentityEncoding.h" />
+    <ClInclude Include="doc\PdfImage.h" />
+    <ClInclude Include="doc\PdfInfo.h" />
+    <ClInclude Include="doc\PdfMemDocument.h" />
+    <ClInclude Include="doc\PdfNamesTree.h" />
+    <ClInclude Include="doc\PdfOutlines.h" />
+    <ClInclude Include="doc\PdfPage.h" />
+    <ClInclude Include="doc\PdfPagesTree.h" />
+    <ClInclude Include="doc\PdfPagesTreeCache.h" />
+    <ClInclude Include="doc\PdfPainter.h" />
+    <ClInclude Include="doc\PdfPainterMM.h" />
+    <ClInclude Include="doc\PdfShadingPattern.h" />
+    <ClInclude Include="doc\PdfSignOutputDevice.h" />
+    <ClInclude Include="doc\PdfSignatureField.h" />
+    <ClInclude Include="doc\PdfStreamedDocument.h" />
+    <ClInclude Include="doc\PdfTable.h" />
+    <ClInclude Include="doc\PdfTilingPattern.h" />
+    <ClInclude Include="doc\PdfXObject.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZERO_CHECK.vcxproj">
+      <Project>{D02C619D-1A23-34F6-96CA-7FF03A9D0677}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

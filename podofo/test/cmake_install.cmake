@@ -1,4 +1,4 @@
-# Install script for directory: C:/code/2.x/litePDF/podofo/test
+# Install script for directory: E:/projects/p1/litePDF/podofo/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,18 +34,18 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/code/2.x/litePDF/podofo/test/ContentParser/cmake_install.cmake")
-  include("C:/code/2.x/litePDF/podofo/test/CreationTest/cmake_install.cmake")
-  include("C:/code/2.x/litePDF/podofo/test/FilterTest/cmake_install.cmake")
-  include("C:/code/2.x/litePDF/podofo/test/FormTest/cmake_install.cmake")
-  include("C:/code/2.x/litePDF/podofo/test/LargeTest/cmake_install.cmake")
-  include("C:/code/2.x/litePDF/podofo/test/ObjectParserTest/cmake_install.cmake")
-  include("C:/code/2.x/litePDF/podofo/test/ParserTest/cmake_install.cmake")
-  include("C:/code/2.x/litePDF/podofo/test/SignatureTest/cmake_install.cmake")
-  include("C:/code/2.x/litePDF/podofo/test/TokenizerTest/cmake_install.cmake")
-  include("C:/code/2.x/litePDF/podofo/test/VariantTest/cmake_install.cmake")
-  include("C:/code/2.x/litePDF/podofo/test/WatermarkTest/cmake_install.cmake")
-  include("C:/code/2.x/litePDF/podofo/test/unit/cmake_install.cmake")
+  include("E:/projects/p1/litePDF/podofo/test/ContentParser/cmake_install.cmake")
+  include("E:/projects/p1/litePDF/podofo/test/CreationTest/cmake_install.cmake")
+  include("E:/projects/p1/litePDF/podofo/test/FilterTest/cmake_install.cmake")
+  include("E:/projects/p1/litePDF/podofo/test/FormTest/cmake_install.cmake")
+  include("E:/projects/p1/litePDF/podofo/test/LargeTest/cmake_install.cmake")
+  include("E:/projects/p1/litePDF/podofo/test/ObjectParserTest/cmake_install.cmake")
+  include("E:/projects/p1/litePDF/podofo/test/ParserTest/cmake_install.cmake")
+  include("E:/projects/p1/litePDF/podofo/test/SignatureTest/cmake_install.cmake")
+  include("E:/projects/p1/litePDF/podofo/test/TokenizerTest/cmake_install.cmake")
+  include("E:/projects/p1/litePDF/podofo/test/VariantTest/cmake_install.cmake")
+  include("E:/projects/p1/litePDF/podofo/test/WatermarkTest/cmake_install.cmake")
+  include("E:/projects/p1/litePDF/podofo/test/unit/cmake_install.cmake")
 
 endif()
 

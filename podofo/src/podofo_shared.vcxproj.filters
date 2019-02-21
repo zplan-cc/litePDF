@@ -1,608 +1,608 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfArray.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfArray.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfCanvas.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfCanvas.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfColor.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfColor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfContentsTokenizer.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfContentsTokenizer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfData.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfData.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfDataType.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfDataType.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfDate.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfDate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfDictionary.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfDictionary.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfEncoding.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfEncoding.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfEncodingFactory.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfEncodingFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfEncrypt.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfEncrypt.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfError.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfError.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfFileStream.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfFileStream.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfFilter.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfFiltersPrivate.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfFiltersPrivate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfImmediateWriter.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfImmediateWriter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfInputDevice.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfInputDevice.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfInputStream.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfInputStream.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfLocale.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfLocale.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfMemStream.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfMemStream.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfMemoryManagement.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfMemoryManagement.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfName.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfName.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfObject.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfObjectStreamParserObject.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfObjectStreamParserObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfOutputDevice.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfOutputDevice.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfOutputStream.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfOutputStream.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfParser.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfParser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfParserObject.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfParserObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfRect.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfRect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfRefCountedBuffer.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfRefCountedBuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfRefCountedInputDevice.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfRefCountedInputDevice.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfReference.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfReference.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfStream.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfStream.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfString.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfString.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfTokenizer.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfTokenizer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfVariant.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfVariant.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfVecObjects.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfVecObjects.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfWriter.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfWriter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfXRef.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfXRef.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfXRefStream.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfXRefStream.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\base\PdfXRefStreamParserObject.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfXRefStreamParserObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfAcroForm.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfAcroForm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfAction.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfAction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfAnnotation.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfAnnotation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfCMapEncoding.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfCMapEncoding.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfContents.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfContents.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfDestination.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfDestination.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfDifferenceEncoding.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfDifferenceEncoding.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfDocument.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfDocument.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfElement.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfElement.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfEncodingObjectFactory.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfEncodingObjectFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfExtGState.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfExtGState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfField.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfField.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFileSpec.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFileSpec.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFont.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFont.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFontCID.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontCID.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFontCache.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontCache.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFontConfigWrapper.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontConfigWrapper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFontFactory.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFontMetrics.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontMetrics.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFontMetricsBase14.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontMetricsBase14.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFontMetricsFreetype.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontMetricsFreetype.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFontMetricsObject.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontMetricsObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFontSimple.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontSimple.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFontTTFSubset.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontTTFSubset.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFontTrueType.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontTrueType.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFontType1.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontType1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFontType3.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontType3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFontType1Base14.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontType1Base14.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFunction.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFunction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfHintStream.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfHintStream.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfIdentityEncoding.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfIdentityEncoding.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfImage.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfImage.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfInfo.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfMemDocument.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfMemDocument.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfNamesTree.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfNamesTree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfOutlines.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfOutlines.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfPage.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfPage.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfPagesTree.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfPagesTree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfPagesTreeCache.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfPagesTreeCache.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfPainter.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfPainter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfPainterMM.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfPainterMM.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfShadingPattern.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfShadingPattern.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfSignOutputDevice.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfSignOutputDevice.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfSignatureField.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfSignatureField.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfStreamedDocument.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfStreamedDocument.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfTable.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfTable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfTilingPattern.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfTilingPattern.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\2.x\litePDF\podofo\src\doc\PdfXObject.cpp">
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfXObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\podofo-base.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\podofo-base.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\podofo.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\podofo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\podofo_config.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\podofo_config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\Pdf3rdPtyForwardDecl.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\Pdf3rdPtyForwardDecl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfArray.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfArray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfCanvas.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfCanvas.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfColor.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfColor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfCompilerCompat.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfCompilerCompat.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfCompilerCompatPrivate.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfCompilerCompatPrivate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfContentsTokenizer.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfContentsTokenizer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfData.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfData.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfDataType.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfDataType.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfDate.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfDate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfDefines.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfDefines.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfDefinesPrivate.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfDefinesPrivate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfDictionary.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfDictionary.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfEncoding.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfEncoding.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfEncodingFactory.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfEncodingFactory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfEncrypt.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfEncrypt.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfExtension.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfExtension.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfError.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfError.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfFileStream.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfFileStream.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfFilter.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfFilter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfFiltersPrivate.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfFiltersPrivate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfImmediateWriter.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfImmediateWriter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfInputDevice.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfInputDevice.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfInputStream.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfInputStream.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfLocale.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfLocale.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfMemStream.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfMemStream.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfMemoryManagement.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfMemoryManagement.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfName.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfName.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfObject.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfObjectStreamParserObject.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfObjectStreamParserObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfOutputDevice.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfOutputDevice.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfOutputStream.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfOutputStream.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfParser.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfParser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfParserObject.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfParserObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfRect.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfRect.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfRefCountedBuffer.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfRefCountedBuffer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfRefCountedInputDevice.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfRefCountedInputDevice.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfReference.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfReference.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfStream.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfStream.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfString.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfString.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfTokenizer.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfTokenizer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfVariant.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfVariant.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfVecObjects.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfVecObjects.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfVersion.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfVersion.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfWriter.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfWriter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfXRef.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfXRef.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfXRefStream.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfXRefStream.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\PdfXRefStreamParserObject.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfXRefStreamParserObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\podofoapi.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\podofoapi.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\util\PdfMutex.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\util\PdfMutex.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\util\PdfMutexImpl_noop.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\util\PdfMutexImpl_noop.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\util\PdfMutexImpl_win32.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\util\PdfMutexImpl_win32.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\util\PdfMutexImpl_pthread.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\util\PdfMutexImpl_pthread.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\base\util\PdfMutexWrapper.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\util\PdfMutexWrapper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfAcroForm.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfAcroForm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfAction.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfAction.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfAnnotation.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfAnnotation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfCMapEncoding.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfCMapEncoding.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfContents.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfContents.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfDestination.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfDestination.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfDifferenceEncoding.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfDifferenceEncoding.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfDocument.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfDocument.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfElement.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfElement.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfEncodingObjectFactory.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfEncodingObjectFactory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfExtGState.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfExtGState.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfField.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfField.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFileSpec.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFileSpec.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFont.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFont.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFontCID.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontCID.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFontCache.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontCache.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFontConfigWrapper.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontConfigWrapper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFontFactory.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontFactory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFontFactoryBase14Data.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontFactoryBase14Data.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFontMetrics.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontMetrics.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFontMetricsBase14.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontMetricsBase14.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFontMetricsFreetype.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontMetricsFreetype.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFontMetricsObject.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontMetricsObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFontSimple.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontSimple.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFontTTFSubset.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontTTFSubset.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFontTrueType.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontTrueType.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFontType1.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontType1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFontType3.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontType3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFontType1Base14.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontType1Base14.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfFunction.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFunction.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfHintStream.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfHintStream.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfIdentityEncoding.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfIdentityEncoding.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfImage.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfImage.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfInfo.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfInfo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfMemDocument.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfMemDocument.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfNamesTree.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfNamesTree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfOutlines.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfOutlines.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfPage.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfPage.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfPagesTree.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfPagesTree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfPagesTreeCache.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfPagesTreeCache.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfPainter.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfPainter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfPainterMM.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfPainterMM.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfShadingPattern.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfShadingPattern.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfSignOutputDevice.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfSignOutputDevice.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfSignatureField.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfSignatureField.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfStreamedDocument.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfStreamedDocument.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfTable.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfTable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfTilingPattern.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfTilingPattern.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\code\2.x\litePDF\podofo\src\doc\PdfXObject.h">
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfXObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\code\2.x\litePDF\podofo\src\CMakeLists.txt" />
+    <CustomBuild Include="E:\projects\p1\litePDF\podofo\src\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="C:\code\2.x\litePDF\podofo\src\doc\podofo-doc.rc">
+    <ResourceCompile Include="E:\projects\p1\litePDF\podofo\src\doc\podofo-doc.rc">
       <Filter>Source Files</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{9C943742-71EA-341E-8C8A-FBB9C27B9AD8}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{52080D96-00D5-311D-9432-0CFD5C647EB9}</UniqueIdentifier>
+      <UniqueIdentifier>{BDCFF604-87EC-3CC8-A015-D7E1C73F9CDB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4C8A6E59-A97B-376D-9AE1-42856CA00AEB}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
