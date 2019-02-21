@@ -1,4 +1,4 @@
-# Install script for directory: C:/code/2.x/litePDF/podofo
+# Install script for directory: E:/projects/p1/litePDF/podofo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,11 +34,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/code/2.x/litePDF/podofo/src/cmake_install.cmake")
-  include("C:/code/2.x/litePDF/podofo/test/cmake_install.cmake")
-  include("C:/code/2.x/litePDF/podofo/tools/cmake_install.cmake")
-  include("C:/code/2.x/litePDF/podofo/examples/cmake_install.cmake")
-  include("C:/code/2.x/litePDF/podofo/man/cmake_install.cmake")
+  include("E:/projects/p1/litePDF/podofo/src/cmake_install.cmake")
+  include("E:/projects/p1/litePDF/podofo/test/cmake_install.cmake")
+  include("E:/projects/p1/litePDF/podofo/tools/cmake_install.cmake")
+  include("E:/projects/p1/litePDF/podofo/examples/cmake_install.cmake")
+  include("E:/projects/p1/litePDF/podofo/man/cmake_install.cmake")
 
 endif()
 
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/code/2.x/litePDF/podofo/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "E:/projects/p1/litePDF/podofo/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

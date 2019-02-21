@@ -47,33 +47,33 @@ add_library(podofo_shared SHARED IMPORTED)
 # Import target "podofo_shared" for configuration "Debug"
 set_property(TARGET podofo_shared APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(podofo_shared PROPERTIES
-  IMPORTED_IMPLIB_DEBUG "C:/code/2.x/litePDF/podofo/src/Debug/podofo.lib"
-  IMPORTED_LINK_INTERFACE_LIBRARIES_DEBUG "C:/code/2.x/litePDF/deps/zlib;C:/code/2.x/zpert/src/lib;C:/code/2.x/litePDF/deps/jpeg;kernel32;user32;gdi32;winspool;comdlg32;advapi32;shell32;ole32;oleaut32;uuid;ws2_32;C:/code/2.x/litePDF/deps/freetype;../deps/png/;C:/code/2.x/litePDF/deps/zlib"
-  IMPORTED_LOCATION_DEBUG "C:/code/2.x/litePDF/podofo/src/Debug/podofo.dll"
+  IMPORTED_IMPLIB_DEBUG "E:/projects/p1/litePDF/podofo/src/Debug/podofo.lib"
+  IMPORTED_LINK_INTERFACE_LIBRARIES_DEBUG "E:/projects/p1/litePDF/deps/zlib;E:/projects/p1/zpert/src/lib;E:/projects/p1/litePDF/deps/jpeg;kernel32;user32;gdi32;winspool;comdlg32;advapi32;shell32;ole32;oleaut32;uuid;ws2_32;E:/projects/p1/litePDF/deps/freetype;../deps/png/;E:/projects/p1/litePDF/deps/zlib"
+  IMPORTED_LOCATION_DEBUG "E:/projects/p1/litePDF/podofo/src/Debug/podofo.dll"
   )
 
 # Import target "podofo_shared" for configuration "Release"
 set_property(TARGET podofo_shared APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(podofo_shared PROPERTIES
-  IMPORTED_IMPLIB_RELEASE "C:/code/2.x/litePDF/podofo/src/Release/podofo.lib"
-  IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "C:/code/2.x/litePDF/deps/zlib;C:/code/2.x/zpert/src/lib;C:/code/2.x/litePDF/deps/jpeg;kernel32;user32;gdi32;winspool;comdlg32;advapi32;shell32;ole32;oleaut32;uuid;ws2_32;C:/code/2.x/litePDF/deps/freetype;../deps/png/;C:/code/2.x/litePDF/deps/zlib"
-  IMPORTED_LOCATION_RELEASE "C:/code/2.x/litePDF/podofo/src/Release/podofo.dll"
+  IMPORTED_IMPLIB_RELEASE "E:/projects/p1/litePDF/podofo/src/Release/podofo.lib"
+  IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "E:/projects/p1/litePDF/deps/zlib;E:/projects/p1/zpert/src/lib;E:/projects/p1/litePDF/deps/jpeg;kernel32;user32;gdi32;winspool;comdlg32;advapi32;shell32;ole32;oleaut32;uuid;ws2_32;E:/projects/p1/litePDF/deps/freetype;../deps/png/;E:/projects/p1/litePDF/deps/zlib"
+  IMPORTED_LOCATION_RELEASE "E:/projects/p1/litePDF/podofo/src/Release/podofo.dll"
   )
 
 # Import target "podofo_shared" for configuration "MinSizeRel"
 set_property(TARGET podofo_shared APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)
 set_target_properties(podofo_shared PROPERTIES
-  IMPORTED_IMPLIB_MINSIZEREL "C:/code/2.x/litePDF/podofo/src/MinSizeRel/podofo.lib"
-  IMPORTED_LINK_INTERFACE_LIBRARIES_MINSIZEREL "C:/code/2.x/litePDF/deps/zlib;C:/code/2.x/zpert/src/lib;C:/code/2.x/litePDF/deps/jpeg;kernel32;user32;gdi32;winspool;comdlg32;advapi32;shell32;ole32;oleaut32;uuid;ws2_32;C:/code/2.x/litePDF/deps/freetype;../deps/png/;C:/code/2.x/litePDF/deps/zlib"
-  IMPORTED_LOCATION_MINSIZEREL "C:/code/2.x/litePDF/podofo/src/MinSizeRel/podofo.dll"
+  IMPORTED_IMPLIB_MINSIZEREL "E:/projects/p1/litePDF/podofo/src/MinSizeRel/podofo.lib"
+  IMPORTED_LINK_INTERFACE_LIBRARIES_MINSIZEREL "E:/projects/p1/litePDF/deps/zlib;E:/projects/p1/zpert/src/lib;E:/projects/p1/litePDF/deps/jpeg;kernel32;user32;gdi32;winspool;comdlg32;advapi32;shell32;ole32;oleaut32;uuid;ws2_32;E:/projects/p1/litePDF/deps/freetype;../deps/png/;E:/projects/p1/litePDF/deps/zlib"
+  IMPORTED_LOCATION_MINSIZEREL "E:/projects/p1/litePDF/podofo/src/MinSizeRel/podofo.dll"
   )
 
 # Import target "podofo_shared" for configuration "RelWithDebInfo"
 set_property(TARGET podofo_shared APPEND PROPERTY IMPORTED_CONFIGURATIONS RELWITHDEBINFO)
 set_target_properties(podofo_shared PROPERTIES
-  IMPORTED_IMPLIB_RELWITHDEBINFO "C:/code/2.x/litePDF/podofo/src/RelWithDebInfo/podofo.lib"
-  IMPORTED_LINK_INTERFACE_LIBRARIES_RELWITHDEBINFO "C:/code/2.x/litePDF/deps/zlib;C:/code/2.x/zpert/src/lib;C:/code/2.x/litePDF/deps/jpeg;kernel32;user32;gdi32;winspool;comdlg32;advapi32;shell32;ole32;oleaut32;uuid;ws2_32;C:/code/2.x/litePDF/deps/freetype;../deps/png/;C:/code/2.x/litePDF/deps/zlib"
-  IMPORTED_LOCATION_RELWITHDEBINFO "C:/code/2.x/litePDF/podofo/src/RelWithDebInfo/podofo.dll"
+  IMPORTED_IMPLIB_RELWITHDEBINFO "E:/projects/p1/litePDF/podofo/src/RelWithDebInfo/podofo.lib"
+  IMPORTED_LINK_INTERFACE_LIBRARIES_RELWITHDEBINFO "E:/projects/p1/litePDF/deps/zlib;E:/projects/p1/zpert/src/lib;E:/projects/p1/litePDF/deps/jpeg;kernel32;user32;gdi32;winspool;comdlg32;advapi32;shell32;ole32;oleaut32;uuid;ws2_32;E:/projects/p1/litePDF/deps/freetype;../deps/png/;E:/projects/p1/litePDF/deps/zlib"
+  IMPORTED_LOCATION_RELWITHDEBINFO "E:/projects/p1/litePDF/podofo/src/RelWithDebInfo/podofo.dll"
   )
 
 # This file does not depend on other imported targets which have

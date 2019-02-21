@@ -1,4 +1,4 @@
-# Install script for directory: C:/code/2.x/litePDF/litePDF/src
+# Install script for directory: E:/projects/p1/litePDF/litePDF/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -42,7 +42,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/code/2.x/litePDF/litePDF/src/Debug/litePDF.lib")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "E:/projects/p1/litePDF/litePDF/src/Debug/litePDF.lib")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/lib/litePDF.lib")
@@ -52,7 +52,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/lib" TYPE STATIC_LIBRAR
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/code/2.x/litePDF/litePDF/src/Release/litePDF.lib")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "E:/projects/p1/litePDF/litePDF/src/Release/litePDF.lib")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/lib/litePDF.lib")
@@ -62,7 +62,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/lib" TYPE STATIC_LIBRAR
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/code/2.x/litePDF/litePDF/src/MinSizeRel/litePDF.lib")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "E:/projects/p1/litePDF/litePDF/src/MinSizeRel/litePDF.lib")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/lib/litePDF.lib")
@@ -72,7 +72,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/lib" TYPE STATIC_LIBRAR
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/code/2.x/litePDF/litePDF/src/RelWithDebInfo/litePDF.lib")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "E:/projects/p1/litePDF/litePDF/src/RelWithDebInfo/litePDF.lib")
   endif()
 endif()
 
@@ -86,7 +86,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/lib" TYPE SHARED_LIBRARY FILES "C:/code/2.x/litePDF/litePDF/src/Debug/litePDF.dll")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/lib" TYPE SHARED_LIBRARY FILES "E:/projects/p1/litePDF/litePDF/src/Debug/litePDF.dll")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/lib/litePDF.dll")
@@ -96,7 +96,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/lib" TYPE SHARED_LIBRAR
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/lib" TYPE SHARED_LIBRARY FILES "C:/code/2.x/litePDF/litePDF/src/Release/litePDF.dll")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/lib" TYPE SHARED_LIBRARY FILES "E:/projects/p1/litePDF/litePDF/src/Release/litePDF.dll")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/lib/litePDF.dll")
@@ -106,7 +106,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/lib" TYPE SHARED_LIBRAR
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/lib" TYPE SHARED_LIBRARY FILES "C:/code/2.x/litePDF/litePDF/src/MinSizeRel/litePDF.dll")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/lib" TYPE SHARED_LIBRARY FILES "E:/projects/p1/litePDF/litePDF/src/MinSizeRel/litePDF.dll")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/lib/litePDF.dll")
@@ -116,7 +116,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/lib" TYPE SHARED_LIBRAR
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/lib" TYPE SHARED_LIBRARY FILES "C:/code/2.x/litePDF/litePDF/src/RelWithDebInfo/litePDF.dll")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/lib" TYPE SHARED_LIBRARY FILES "E:/projects/p1/litePDF/litePDF/src/RelWithDebInfo/litePDF.dll")
   endif()
 endif()
 
@@ -130,7 +130,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/Debug/attachments.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/Debug/attachments.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/attachments.exe")
@@ -140,7 +140,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/Release/attachments.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/Release/attachments.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/attachments.exe")
@@ -150,7 +150,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/MinSizeRel/attachments.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/MinSizeRel/attachments.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/attachments.exe")
@@ -160,7 +160,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/RelWithDebInfo/attachments.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/RelWithDebInfo/attachments.exe")
   endif()
 endif()
 
@@ -174,7 +174,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/Debug/bookmarks.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/Debug/bookmarks.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/bookmarks.exe")
@@ -184,7 +184,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/Release/bookmarks.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/Release/bookmarks.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/bookmarks.exe")
@@ -194,7 +194,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/MinSizeRel/bookmarks.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/MinSizeRel/bookmarks.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/bookmarks.exe")
@@ -204,7 +204,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/RelWithDebInfo/bookmarks.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/RelWithDebInfo/bookmarks.exe")
   endif()
 endif()
 
@@ -218,7 +218,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/Debug/dataops.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/Debug/dataops.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/dataops.exe")
@@ -228,7 +228,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/Release/dataops.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/Release/dataops.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/dataops.exe")
@@ -238,7 +238,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/MinSizeRel/dataops.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/MinSizeRel/dataops.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/dataops.exe")
@@ -248,7 +248,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/RelWithDebInfo/dataops.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/RelWithDebInfo/dataops.exe")
   endif()
 endif()
 
@@ -262,7 +262,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/Debug/docinfo.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/Debug/docinfo.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/docinfo.exe")
@@ -272,7 +272,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/Release/docinfo.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/Release/docinfo.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/docinfo.exe")
@@ -282,7 +282,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/MinSizeRel/docinfo.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/MinSizeRel/docinfo.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/docinfo.exe")
@@ -292,7 +292,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/RelWithDebInfo/docinfo.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/RelWithDebInfo/docinfo.exe")
   endif()
 endif()
 
@@ -306,7 +306,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/Debug/drawtoresource.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/Debug/drawtoresource.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/drawtoresource.exe")
@@ -316,7 +316,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/Release/drawtoresource.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/Release/drawtoresource.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/drawtoresource.exe")
@@ -326,7 +326,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/MinSizeRel/drawtoresource.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/MinSizeRel/drawtoresource.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/drawtoresource.exe")
@@ -336,7 +336,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/RelWithDebInfo/drawtoresource.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/RelWithDebInfo/drawtoresource.exe")
   endif()
 endif()
 
@@ -350,7 +350,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/Debug/encrypt.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/Debug/encrypt.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/encrypt.exe")
@@ -360,7 +360,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/Release/encrypt.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/Release/encrypt.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/encrypt.exe")
@@ -370,7 +370,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/MinSizeRel/encrypt.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/MinSizeRel/encrypt.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/encrypt.exe")
@@ -380,7 +380,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/RelWithDebInfo/encrypt.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/RelWithDebInfo/encrypt.exe")
   endif()
 endif()
 
@@ -394,7 +394,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/Debug/fromdoc.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/Debug/fromdoc.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/fromdoc.exe")
@@ -404,7 +404,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/Release/fromdoc.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/Release/fromdoc.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/fromdoc.exe")
@@ -414,7 +414,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/MinSizeRel/fromdoc.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/MinSizeRel/fromdoc.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/fromdoc.exe")
@@ -424,7 +424,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/RelWithDebInfo/fromdoc.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/RelWithDebInfo/fromdoc.exe")
   endif()
 endif()
 
@@ -438,7 +438,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/Debug/helloworld.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/Debug/helloworld.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/helloworld.exe")
@@ -448,7 +448,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/Release/helloworld.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/Release/helloworld.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/helloworld.exe")
@@ -458,7 +458,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/MinSizeRel/helloworld.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/MinSizeRel/helloworld.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/helloworld.exe")
@@ -468,7 +468,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/RelWithDebInfo/helloworld.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/RelWithDebInfo/helloworld.exe")
   endif()
 endif()
 
@@ -482,7 +482,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/Debug/incrementalupdate.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/Debug/incrementalupdate.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/incrementalupdate.exe")
@@ -492,7 +492,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/Release/incrementalupdate.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/Release/incrementalupdate.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/incrementalupdate.exe")
@@ -502,7 +502,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/MinSizeRel/incrementalupdate.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/MinSizeRel/incrementalupdate.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/incrementalupdate.exe")
@@ -512,7 +512,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/RelWithDebInfo/incrementalupdate.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/RelWithDebInfo/incrementalupdate.exe")
   endif()
 endif()
 
@@ -526,7 +526,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/Debug/pagesperpage.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/Debug/pagesperpage.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/pagesperpage.exe")
@@ -536,7 +536,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/Release/pagesperpage.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/Release/pagesperpage.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/pagesperpage.exe")
@@ -546,7 +546,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/MinSizeRel/pagesperpage.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/MinSizeRel/pagesperpage.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/pagesperpage.exe")
@@ -556,7 +556,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/RelWithDebInfo/pagesperpage.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/RelWithDebInfo/pagesperpage.exe")
   endif()
 endif()
 
@@ -570,7 +570,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/Debug/podofodocument.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/Debug/podofodocument.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/podofodocument.exe")
@@ -580,7 +580,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/Release/podofodocument.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/Release/podofodocument.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/podofodocument.exe")
@@ -590,7 +590,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/MinSizeRel/podofodocument.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/MinSizeRel/podofodocument.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/podofodocument.exe")
@@ -600,7 +600,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/RelWithDebInfo/podofodocument.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/RelWithDebInfo/podofodocument.exe")
   endif()
 endif()
 
@@ -614,7 +614,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/Debug/sign.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/Debug/sign.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/sign.exe")
@@ -624,7 +624,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/Release/sign.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/Release/sign.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/sign.exe")
@@ -634,7 +634,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/MinSizeRel/sign.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/MinSizeRel/sign.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/sign.exe")
@@ -644,7 +644,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/RelWithDebInfo/sign.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/RelWithDebInfo/sign.exe")
   endif()
 endif()
 
@@ -658,7 +658,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/Debug/signmanual.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/Debug/signmanual.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/signmanual.exe")
@@ -668,7 +668,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/Release/signmanual.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/Release/signmanual.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/signmanual.exe")
@@ -678,7 +678,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/MinSizeRel/signmanual.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/MinSizeRel/signmanual.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/signmanual.exe")
@@ -688,7 +688,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/RelWithDebInfo/signmanual.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/RelWithDebInfo/signmanual.exe")
   endif()
 endif()
 
@@ -702,7 +702,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/Debug/unitvalues.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/Debug/unitvalues.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/unitvalues.exe")
@@ -712,7 +712,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/Release/unitvalues.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/Release/unitvalues.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/unitvalues.exe")
@@ -722,7 +722,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/MinSizeRel/unitvalues.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/MinSizeRel/unitvalues.exe")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "C:/Program Files (x86)/litePDF/examples/unitvalues.exe")
@@ -732,7 +732,7 @@ file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTAB
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
         message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "C:/code/2.x/litePDF/litePDF/src/RelWithDebInfo/unitvalues.exe")
+file(INSTALL DESTINATION "C:/Program Files (x86)/litePDF/examples" TYPE EXECUTABLE FILES "E:/projects/p1/litePDF/litePDF/src/RelWithDebInfo/unitvalues.exe")
   endif()
 endif()
 
@@ -744,5 +744,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/code/2.x/litePDF/litePDF/src/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "E:/projects/p1/litePDF/litePDF/src/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

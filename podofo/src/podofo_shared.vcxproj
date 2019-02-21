@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{8FD4A8A6-94CF-3A3E-8609-026AA7B2F58B}</ProjectGuid>
+    <ProjectGuid>{87261B8A-3E2C-3DD9-87E0-AF714948BBFA}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
     <ProjectName>podofo_shared</ProjectName>
@@ -38,12 +38,12 @@
     <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
@@ -56,34 +56,34 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\projects\p1\litePDF\podofo\src\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">podofo_shared.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">podofo</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\projects\p1\litePDF\podofo\src\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">podofo_shared.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">podofo</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\projects\p1\litePDF\podofo\src\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">podofo_shared.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">podofo</TargetName>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\projects\p1\litePDF\podofo\src\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">podofo_shared.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">podofo</TargetName>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..;..\..\deps\jpeg;..\..\deps\png;..\..\deps\zlib;..\..\podofo\src;..\..\deps\freetype;..\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\projects\p1\litePDF\podofo;E:\projects\p1\litePDF\deps\jpeg;E:\projects\p1\litePDF\deps\png;E:\projects\p1\litePDF\deps\zlib;E:\projects\p1\litePDF\podofo\src;E:\projects\p1\litePDF\podofo\..\deps\freetype;E:\projects\p1\litePDF\podofo\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -100,10 +100,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;BUILDING_PODOFO;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"Debug\";podofo_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..;..\,,\deps\jpeg;..\,,\deps\png;..\,,\deps\zlib;..\src;..\..\deps\freetype;..\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\projects\p1\litePDF\podofo;E:\projects\p1\litePDF\deps\jpeg;E:\projects\p1\litePDF\deps\png;E:\projects\p1\litePDF\deps\zlib;E:\projects\p1\litePDF\podofo\src;E:\projects\p1\litePDF\podofo\..\deps\freetype;E:\projects\p1\litePDF\podofo\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..;..\,,\deps\jpeg;..\,,\deps\png;..\,,\deps\zlib;..\src;..\..\deps\freetype;..\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\projects\p1\litePDF\podofo;E:\projects\p1\litePDF\deps\jpeg;E:\projects\p1\litePDF\deps\png;E:\projects\p1\litePDF\deps\zlib;E:\projects\p1\litePDF\podofo\src;E:\projects\p1\litePDF\podofo\..\deps\freetype;E:\projects\p1\litePDF\podofo\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -112,12 +112,12 @@
     </Midl>
     <Link>
       <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;ws2_32.lib;../deps/png/.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;ws2_32.lib;../deps/png/.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:../src;$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>E:/projects/p1/litePDF/podofo/src;E:/projects/p1/litePDF/podofo/src/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>Debug/podofo.lib</ImportLibrary>
-      <ProgramDataBaseFile>Debug/podofo.pdb</ProgramDataBaseFile>
+      <ImportLibrary>E:/projects/p1/litePDF/podofo/src/Debug/podofo.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/projects/p1/litePDF/podofo/src/Debug/podofo.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -126,7 +126,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..;..\..\deps\jpeg;..\..\deps\png;..\..\deps\zlib;..\..\podofo\src;..\..\deps\freetype;..\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\projects\p1\litePDF\podofo;E:\projects\p1\litePDF\deps\jpeg;E:\projects\p1\litePDF\deps\png;E:\projects\p1\litePDF\deps\zlib;E:\projects\p1\litePDF\podofo\src;E:\projects\p1\litePDF\podofo\..\deps\freetype;E:\projects\p1\litePDF\podofo\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -143,10 +143,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILDING_PODOFO;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"Release\";podofo_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..;..\,,\deps\jpeg;..\,,\deps\png;..\,,\deps\zlib;..\src;..\..\deps\freetype;..\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\projects\p1\litePDF\podofo;E:\projects\p1\litePDF\deps\jpeg;E:\projects\p1\litePDF\deps\png;E:\projects\p1\litePDF\deps\zlib;E:\projects\p1\litePDF\podofo\src;E:\projects\p1\litePDF\podofo\..\deps\freetype;E:\projects\p1\litePDF\podofo\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..;..\,,\deps\jpeg;..\,,\deps\png;..\,,\deps\zlib;..\src;..\..\deps\freetype;..\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\projects\p1\litePDF\podofo;E:\projects\p1\litePDF\deps\jpeg;E:\projects\p1\litePDF\deps\png;E:\projects\p1\litePDF\deps\zlib;E:\projects\p1\litePDF\podofo\src;E:\projects\p1\litePDF\podofo\..\deps\freetype;E:\projects\p1\litePDF\podofo\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -155,12 +155,12 @@
     </Midl>
     <Link>
       <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;ws2_32.lib;../deps/png/.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;ws2_32.lib;../deps/png/.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:../src;$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>E:/projects/p1/litePDF/podofo/src;E:/projects/p1/litePDF/podofo/src/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>Release/podofo.lib</ImportLibrary>
-      <ProgramDataBaseFile>Release/podofo.pdb</ProgramDataBaseFile>
+      <ImportLibrary>E:/projects/p1/litePDF/podofo/src/Release/podofo.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/projects/p1/litePDF/podofo/src/Release/podofo.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -169,7 +169,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..;..\..\deps\jpeg;..\..\deps\png;..\..\deps\zlib;..\..\podofo\src;..\..\deps\freetype;..\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\projects\p1\litePDF\podofo;E:\projects\p1\litePDF\deps\jpeg;E:\projects\p1\litePDF\deps\png;E:\projects\p1\litePDF\deps\zlib;E:\projects\p1\litePDF\podofo\src;E:\projects\p1\litePDF\podofo\..\deps\freetype;E:\projects\p1\litePDF\podofo\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -186,10 +186,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILDING_PODOFO;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"MinSizeRel\";podofo_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..;..\,,\deps\jpeg;..\,,\deps\png;..\,,\deps\zlib;..\src;..\..\deps\freetype;..\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\projects\p1\litePDF\podofo;E:\projects\p1\litePDF\deps\jpeg;E:\projects\p1\litePDF\deps\png;E:\projects\p1\litePDF\deps\zlib;E:\projects\p1\litePDF\podofo\src;E:\projects\p1\litePDF\podofo\..\deps\freetype;E:\projects\p1\litePDF\podofo\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..;..\,,\deps\jpeg;..\,,\deps\png;..\,,\deps\zlib;..\src;..\..\deps\freetype;..\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\projects\p1\litePDF\podofo;E:\projects\p1\litePDF\deps\jpeg;E:\projects\p1\litePDF\deps\png;E:\projects\p1\litePDF\deps\zlib;E:\projects\p1\litePDF\podofo\src;E:\projects\p1\litePDF\podofo\..\deps\freetype;E:\projects\p1\litePDF\podofo\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -198,12 +198,12 @@
     </Midl>
     <Link>
       <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;ws2_32.lib;../deps/png/.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;ws2_32.lib;../deps/png/.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:../src;$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>E:/projects/p1/litePDF/podofo/src;E:/projects/p1/litePDF/podofo/src/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>MinSizeRel/podofo.lib</ImportLibrary>
-      <ProgramDataBaseFile>MinSizeRel/podofo.pdb</ProgramDataBaseFile>
+      <ImportLibrary>E:/projects/p1/litePDF/podofo/src/MinSizeRel/podofo.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/projects/p1/litePDF/podofo/src/MinSizeRel/podofo.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -212,7 +212,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..;..\..\deps\jpeg;..\..\deps\png;..\..\deps\zlib;..\..\podofo\src;..\..\deps\freetype;..\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\projects\p1\litePDF\podofo;E:\projects\p1\litePDF\deps\jpeg;E:\projects\p1\litePDF\deps\png;E:\projects\p1\litePDF\deps\zlib;E:\projects\p1\litePDF\podofo\src;E:\projects\p1\litePDF\podofo\..\deps\freetype;E:\projects\p1\litePDF\podofo\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -228,10 +228,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILDING_PODOFO;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"RelWithDebInfo\";podofo_shared_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..;..\,,\deps\jpeg;..\,,\deps\png;..\,,\deps\zlib;..\src;..\..\deps\freetype;..\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\projects\p1\litePDF\podofo;E:\projects\p1\litePDF\deps\jpeg;E:\projects\p1\litePDF\deps\png;E:\projects\p1\litePDF\deps\zlib;E:\projects\p1\litePDF\podofo\src;E:\projects\p1\litePDF\podofo\..\deps\freetype;E:\projects\p1\litePDF\podofo\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>..;..\,,\deps\jpeg;..\,,\deps\png;..\,,\deps\zlib;..\src;..\..\deps\freetype;..\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\projects\p1\litePDF\podofo;E:\projects\p1\litePDF\deps\jpeg;E:\projects\p1\litePDF\deps\png;E:\projects\p1\litePDF\deps\zlib;E:\projects\p1\litePDF\podofo\src;E:\projects\p1\litePDF\podofo\..\deps\freetype;E:\projects\p1\litePDF\podofo\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -240,12 +240,12 @@
     </Midl>
     <Link>
       <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;ws2_32.lib;../deps/png/.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;ws2_32.lib;../deps/png/.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:../src;$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>E:/projects/p1/litePDF/podofo/src;E:/projects/p1/litePDF/podofo/src/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>RelWithDebInfo/podofo.lib</ImportLibrary>
-      <ProgramDataBaseFile>RelWithDebInfo/podofo.pdb</ProgramDataBaseFile>
+      <ImportLibrary>E:/projects/p1/litePDF/podofo/src/RelWithDebInfo/podofo.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/projects/p1/litePDF/podofo/src/RelWithDebInfo/podofo.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -253,10 +253,10 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule CMakeLists.txt</Message>
+    <CustomBuild Include="E:\projects\p1\litePDF\podofo\src\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/projects/p1/litePDF/podofo/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HC:.. -BC:.. --check-stamp-file CMakeFiles/generate.stamp
+"D:\Program Files\CMake\bin\cmake.exe" -HE:/projects/p1/litePDF/podofo -BE:/projects/p1/litePDF/podofo --check-stamp-file E:/projects/p1/litePDF/podofo/src/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -264,12 +264,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CMakeLists.txt;CMakeLists.txt;CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/projects/p1/litePDF/podofo/src/CMakeLists.txt;E:\projects\p1\litePDF\podofo\src\CMakeLists.txt;E:\projects\p1\litePDF\podofo\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\projects\p1\litePDF\podofo\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/projects/p1/litePDF/podofo/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HC:.. -BC:.. --check-stamp-file CMakeFiles/generate.stamp
+"D:\Program Files\CMake\bin\cmake.exe" -HE:/projects/p1/litePDF/podofo -BE:/projects/p1/litePDF/podofo --check-stamp-file E:/projects/p1/litePDF/podofo/src/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -277,12 +277,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CMakeLists.txt;CMakeLists.txt;CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/projects/p1/litePDF/podofo/src/CMakeLists.txt;E:\projects\p1\litePDF\podofo\src\CMakeLists.txt;E:\projects\p1\litePDF\podofo\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\projects\p1\litePDF\podofo\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule E:/projects/p1/litePDF/podofo/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HC:.. -BC:.. --check-stamp-file CMakeFiles/generate.stamp
+"D:\Program Files\CMake\bin\cmake.exe" -HE:/projects/p1/litePDF/podofo -BE:/projects/p1/litePDF/podofo --check-stamp-file E:/projects/p1/litePDF/podofo/src/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -290,12 +290,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CMakeLists.txt;CMakeLists.txt;CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/projects/p1/litePDF/podofo/src/CMakeLists.txt;E:\projects\p1\litePDF\podofo\src\CMakeLists.txt;E:\projects\p1\litePDF\podofo\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\projects\p1\litePDF\podofo\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule E:/projects/p1/litePDF/podofo/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HC:.. -BC:.. --check-stamp-file CMakeFiles/generate.stamp
+"D:\Program Files\CMake\bin\cmake.exe" -HE:/projects/p1/litePDF/podofo -BE:/projects/p1/litePDF/podofo --check-stamp-file E:/projects/p1/litePDF/podofo/src/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -303,212 +303,212 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CMakeLists.txt;CMakeLists.txt;CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/projects/p1/litePDF/podofo/src/CMakeLists.txt;E:\projects\p1\litePDF\podofo\src\CMakeLists.txt;E:\projects\p1\litePDF\podofo\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\projects\p1\litePDF\podofo\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="base\PdfArray.cpp" />
-    <ClCompile Include="base\PdfCanvas.cpp" />
-    <ClCompile Include="base\PdfColor.cpp" />
-    <ClCompile Include="base\PdfContentsTokenizer.cpp" />
-    <ClCompile Include="base\PdfData.cpp" />
-    <ClCompile Include="base\PdfDataType.cpp" />
-    <ClCompile Include="base\PdfDate.cpp" />
-    <ClCompile Include="base\PdfDictionary.cpp" />
-    <ClCompile Include="base\PdfEncoding.cpp" />
-    <ClCompile Include="base\PdfEncodingFactory.cpp" />
-    <ClCompile Include="base\PdfEncrypt.cpp" />
-    <ClCompile Include="base\PdfError.cpp" />
-    <ClCompile Include="base\PdfFileStream.cpp" />
-    <ClCompile Include="base\PdfFilter.cpp" />
-    <ClCompile Include="base\PdfFiltersPrivate.cpp" />
-    <ClCompile Include="base\PdfImmediateWriter.cpp" />
-    <ClCompile Include="base\PdfInputDevice.cpp" />
-    <ClCompile Include="base\PdfInputStream.cpp" />
-    <ClCompile Include="base\PdfLocale.cpp" />
-    <ClCompile Include="base\PdfMemStream.cpp" />
-    <ClCompile Include="base\PdfMemoryManagement.cpp" />
-    <ClCompile Include="base\PdfName.cpp" />
-    <ClCompile Include="base\PdfObject.cpp" />
-    <ClCompile Include="base\PdfObjectStreamParserObject.cpp" />
-    <ClCompile Include="base\PdfOutputDevice.cpp" />
-    <ClCompile Include="base\PdfOutputStream.cpp" />
-    <ClCompile Include="base\PdfParser.cpp" />
-    <ClCompile Include="base\PdfParserObject.cpp" />
-    <ClCompile Include="base\PdfRect.cpp" />
-    <ClCompile Include="base\PdfRefCountedBuffer.cpp" />
-    <ClCompile Include="base\PdfRefCountedInputDevice.cpp" />
-    <ClCompile Include="base\PdfReference.cpp" />
-    <ClCompile Include="base\PdfStream.cpp" />
-    <ClCompile Include="base\PdfString.cpp" />
-    <ClCompile Include="base\PdfTokenizer.cpp" />
-    <ClCompile Include="base\PdfVariant.cpp" />
-    <ClCompile Include="base\PdfVecObjects.cpp" />
-    <ClCompile Include="base\PdfWriter.cpp" />
-    <ClCompile Include="base\PdfXRef.cpp" />
-    <ClCompile Include="base\PdfXRefStream.cpp" />
-    <ClCompile Include="base\PdfXRefStreamParserObject.cpp" />
-    <ClCompile Include="doc\PdfAcroForm.cpp" />
-    <ClCompile Include="doc\PdfAction.cpp" />
-    <ClCompile Include="doc\PdfAnnotation.cpp" />
-    <ClCompile Include="doc\PdfCMapEncoding.cpp" />
-    <ClCompile Include="doc\PdfContents.cpp" />
-    <ClCompile Include="doc\PdfDestination.cpp" />
-    <ClCompile Include="doc\PdfDifferenceEncoding.cpp" />
-    <ClCompile Include="doc\PdfDocument.cpp" />
-    <ClCompile Include="doc\PdfElement.cpp" />
-    <ClCompile Include="doc\PdfEncodingObjectFactory.cpp" />
-    <ClCompile Include="doc\PdfExtGState.cpp" />
-    <ClCompile Include="doc\PdfField.cpp" />
-    <ClCompile Include="doc\PdfFileSpec.cpp" />
-    <ClCompile Include="doc\PdfFont.cpp" />
-    <ClCompile Include="doc\PdfFontCID.cpp" />
-    <ClCompile Include="doc\PdfFontCache.cpp" />
-    <ClCompile Include="doc\PdfFontConfigWrapper.cpp" />
-    <ClCompile Include="doc\PdfFontFactory.cpp" />
-    <ClCompile Include="doc\PdfFontMetrics.cpp" />
-    <ClCompile Include="doc\PdfFontMetricsBase14.cpp" />
-    <ClCompile Include="doc\PdfFontMetricsFreetype.cpp" />
-    <ClCompile Include="doc\PdfFontMetricsObject.cpp" />
-    <ClCompile Include="doc\PdfFontSimple.cpp" />
-    <ClCompile Include="doc\PdfFontTTFSubset.cpp" />
-    <ClCompile Include="doc\PdfFontTrueType.cpp" />
-    <ClCompile Include="doc\PdfFontType1.cpp" />
-    <ClCompile Include="doc\PdfFontType3.cpp" />
-    <ClCompile Include="doc\PdfFontType1Base14.cpp" />
-    <ClCompile Include="doc\PdfFunction.cpp" />
-    <ClCompile Include="doc\PdfHintStream.cpp" />
-    <ClCompile Include="doc\PdfIdentityEncoding.cpp" />
-    <ClCompile Include="doc\PdfImage.cpp" />
-    <ClCompile Include="doc\PdfInfo.cpp" />
-    <ClCompile Include="doc\PdfMemDocument.cpp" />
-    <ClCompile Include="doc\PdfNamesTree.cpp" />
-    <ClCompile Include="doc\PdfOutlines.cpp" />
-    <ClCompile Include="doc\PdfPage.cpp" />
-    <ClCompile Include="doc\PdfPagesTree.cpp" />
-    <ClCompile Include="doc\PdfPagesTreeCache.cpp" />
-    <ClCompile Include="doc\PdfPainter.cpp" />
-    <ClCompile Include="doc\PdfPainterMM.cpp" />
-    <ClCompile Include="doc\PdfShadingPattern.cpp" />
-    <ClCompile Include="doc\PdfSignOutputDevice.cpp" />
-    <ClCompile Include="doc\PdfSignatureField.cpp" />
-    <ClCompile Include="doc\PdfStreamedDocument.cpp" />
-    <ClCompile Include="doc\PdfTable.cpp" />
-    <ClCompile Include="doc\PdfTilingPattern.cpp" />
-    <ClCompile Include="doc\PdfXObject.cpp" />
-    <ResourceCompile Include="doc\podofo-doc.rc" />
-    <ClInclude Include="podofo-base.h" />
-    <ClInclude Include="podofo.h" />
-    <ClInclude Include="..\podofo_config.h" />
-    <ClInclude Include="base\Pdf3rdPtyForwardDecl.h" />
-    <ClInclude Include="base\PdfArray.h" />
-    <ClInclude Include="base\PdfCanvas.h" />
-    <ClInclude Include="base\PdfColor.h" />
-    <ClInclude Include="base\PdfCompilerCompat.h" />
-    <ClInclude Include="base\PdfCompilerCompatPrivate.h" />
-    <ClInclude Include="base\PdfContentsTokenizer.h" />
-    <ClInclude Include="base\PdfData.h" />
-    <ClInclude Include="base\PdfDataType.h" />
-    <ClInclude Include="base\PdfDate.h" />
-    <ClInclude Include="base\PdfDefines.h" />
-    <ClInclude Include="base\PdfDefinesPrivate.h" />
-    <ClInclude Include="base\PdfDictionary.h" />
-    <ClInclude Include="base\PdfEncoding.h" />
-    <ClInclude Include="base\PdfEncodingFactory.h" />
-    <ClInclude Include="base\PdfEncrypt.h" />
-    <ClInclude Include="base\PdfExtension.h" />
-    <ClInclude Include="base\PdfError.h" />
-    <ClInclude Include="base\PdfFileStream.h" />
-    <ClInclude Include="base\PdfFilter.h" />
-    <ClInclude Include="base\PdfFiltersPrivate.h" />
-    <ClInclude Include="base\PdfImmediateWriter.h" />
-    <ClInclude Include="base\PdfInputDevice.h" />
-    <ClInclude Include="base\PdfInputStream.h" />
-    <ClInclude Include="base\PdfLocale.h" />
-    <ClInclude Include="base\PdfMemStream.h" />
-    <ClInclude Include="base\PdfMemoryManagement.h" />
-    <ClInclude Include="base\PdfName.h" />
-    <ClInclude Include="base\PdfObject.h" />
-    <ClInclude Include="base\PdfObjectStreamParserObject.h" />
-    <ClInclude Include="base\PdfOutputDevice.h" />
-    <ClInclude Include="base\PdfOutputStream.h" />
-    <ClInclude Include="base\PdfParser.h" />
-    <ClInclude Include="base\PdfParserObject.h" />
-    <ClInclude Include="base\PdfRect.h" />
-    <ClInclude Include="base\PdfRefCountedBuffer.h" />
-    <ClInclude Include="base\PdfRefCountedInputDevice.h" />
-    <ClInclude Include="base\PdfReference.h" />
-    <ClInclude Include="base\PdfStream.h" />
-    <ClInclude Include="base\PdfString.h" />
-    <ClInclude Include="base\PdfTokenizer.h" />
-    <ClInclude Include="base\PdfVariant.h" />
-    <ClInclude Include="base\PdfVecObjects.h" />
-    <ClInclude Include="base\PdfVersion.h" />
-    <ClInclude Include="base\PdfWriter.h" />
-    <ClInclude Include="base\PdfXRef.h" />
-    <ClInclude Include="base\PdfXRefStream.h" />
-    <ClInclude Include="base\PdfXRefStreamParserObject.h" />
-    <ClInclude Include="base\podofoapi.h" />
-    <ClInclude Include="base\util\PdfMutex.h" />
-    <ClInclude Include="base\util\PdfMutexImpl_noop.h" />
-    <ClInclude Include="base\util\PdfMutexImpl_win32.h" />
-    <ClInclude Include="base\util\PdfMutexImpl_pthread.h" />
-    <ClInclude Include="base\util\PdfMutexWrapper.h" />
-    <ClInclude Include="doc\PdfAcroForm.h" />
-    <ClInclude Include="doc\PdfAction.h" />
-    <ClInclude Include="doc\PdfAnnotation.h" />
-    <ClInclude Include="doc\PdfCMapEncoding.h" />
-    <ClInclude Include="doc\PdfContents.h" />
-    <ClInclude Include="doc\PdfDestination.h" />
-    <ClInclude Include="doc\PdfDifferenceEncoding.h" />
-    <ClInclude Include="doc\PdfDocument.h" />
-    <ClInclude Include="doc\PdfElement.h" />
-    <ClInclude Include="doc\PdfEncodingObjectFactory.h" />
-    <ClInclude Include="doc\PdfExtGState.h" />
-    <ClInclude Include="doc\PdfField.h" />
-    <ClInclude Include="doc\PdfFileSpec.h" />
-    <ClInclude Include="doc\PdfFont.h" />
-    <ClInclude Include="doc\PdfFontCID.h" />
-    <ClInclude Include="doc\PdfFontCache.h" />
-    <ClInclude Include="doc\PdfFontConfigWrapper.h" />
-    <ClInclude Include="doc\PdfFontFactory.h" />
-    <ClInclude Include="doc\PdfFontFactoryBase14Data.h" />
-    <ClInclude Include="doc\PdfFontMetrics.h" />
-    <ClInclude Include="doc\PdfFontMetricsBase14.h" />
-    <ClInclude Include="doc\PdfFontMetricsFreetype.h" />
-    <ClInclude Include="doc\PdfFontMetricsObject.h" />
-    <ClInclude Include="doc\PdfFontSimple.h" />
-    <ClInclude Include="doc\PdfFontTTFSubset.h" />
-    <ClInclude Include="doc\PdfFontTrueType.h" />
-    <ClInclude Include="doc\PdfFontType1.h" />
-    <ClInclude Include="doc\PdfFontType3.h" />
-    <ClInclude Include="doc\PdfFontType1Base14.h" />
-    <ClInclude Include="doc\PdfFunction.h" />
-    <ClInclude Include="doc\PdfHintStream.h" />
-    <ClInclude Include="doc\PdfIdentityEncoding.h" />
-    <ClInclude Include="doc\PdfImage.h" />
-    <ClInclude Include="doc\PdfInfo.h" />
-    <ClInclude Include="doc\PdfMemDocument.h" />
-    <ClInclude Include="doc\PdfNamesTree.h" />
-    <ClInclude Include="doc\PdfOutlines.h" />
-    <ClInclude Include="doc\PdfPage.h" />
-    <ClInclude Include="doc\PdfPagesTree.h" />
-    <ClInclude Include="doc\PdfPagesTreeCache.h" />
-    <ClInclude Include="doc\PdfPainter.h" />
-    <ClInclude Include="doc\PdfPainterMM.h" />
-    <ClInclude Include="doc\PdfShadingPattern.h" />
-    <ClInclude Include="doc\PdfSignOutputDevice.h" />
-    <ClInclude Include="doc\PdfSignatureField.h" />
-    <ClInclude Include="doc\PdfStreamedDocument.h" />
-    <ClInclude Include="doc\PdfTable.h" />
-    <ClInclude Include="doc\PdfTilingPattern.h" />
-    <ClInclude Include="doc\PdfXObject.h" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfArray.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfCanvas.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfColor.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfContentsTokenizer.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfData.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfDataType.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfDate.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfDictionary.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfEncoding.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfEncodingFactory.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfEncrypt.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfError.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfFileStream.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfFilter.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfFiltersPrivate.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfImmediateWriter.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfInputDevice.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfInputStream.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfLocale.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfMemStream.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfMemoryManagement.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfName.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfObject.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfObjectStreamParserObject.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfOutputDevice.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfOutputStream.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfParser.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfParserObject.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfRect.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfRefCountedBuffer.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfRefCountedInputDevice.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfReference.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfStream.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfString.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfTokenizer.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfVariant.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfVecObjects.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfWriter.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfXRef.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfXRefStream.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\base\PdfXRefStreamParserObject.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfAcroForm.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfAction.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfAnnotation.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfCMapEncoding.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfContents.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfDestination.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfDifferenceEncoding.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfDocument.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfElement.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfEncodingObjectFactory.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfExtGState.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfField.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFileSpec.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFont.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontCID.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontCache.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontConfigWrapper.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontFactory.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontMetrics.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontMetricsBase14.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontMetricsFreetype.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontMetricsObject.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontSimple.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontTTFSubset.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontTrueType.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontType1.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontType3.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontType1Base14.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFunction.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfHintStream.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfIdentityEncoding.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfImage.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfInfo.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfMemDocument.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfNamesTree.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfOutlines.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfPage.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfPagesTree.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfPagesTreeCache.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfPainter.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfPainterMM.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfShadingPattern.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfSignOutputDevice.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfSignatureField.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfStreamedDocument.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfTable.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfTilingPattern.cpp" />
+    <ClCompile Include="E:\projects\p1\litePDF\podofo\src\doc\PdfXObject.cpp" />
+    <ResourceCompile Include="E:\projects\p1\litePDF\podofo\src\doc\podofo-doc.rc" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\podofo-base.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\podofo.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\podofo_config.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\Pdf3rdPtyForwardDecl.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfArray.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfCanvas.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfColor.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfCompilerCompat.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfCompilerCompatPrivate.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfContentsTokenizer.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfData.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfDataType.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfDate.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfDefines.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfDefinesPrivate.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfDictionary.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfEncoding.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfEncodingFactory.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfEncrypt.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfExtension.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfError.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfFileStream.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfFilter.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfFiltersPrivate.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfImmediateWriter.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfInputDevice.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfInputStream.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfLocale.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfMemStream.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfMemoryManagement.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfName.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfObject.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfObjectStreamParserObject.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfOutputDevice.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfOutputStream.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfParser.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfParserObject.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfRect.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfRefCountedBuffer.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfRefCountedInputDevice.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfReference.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfStream.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfString.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfTokenizer.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfVariant.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfVecObjects.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfVersion.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfWriter.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfXRef.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfXRefStream.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\PdfXRefStreamParserObject.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\podofoapi.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\util\PdfMutex.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\util\PdfMutexImpl_noop.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\util\PdfMutexImpl_win32.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\util\PdfMutexImpl_pthread.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\base\util\PdfMutexWrapper.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfAcroForm.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfAction.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfAnnotation.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfCMapEncoding.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfContents.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfDestination.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfDifferenceEncoding.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfDocument.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfElement.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfEncodingObjectFactory.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfExtGState.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfField.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFileSpec.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFont.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontCID.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontCache.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontConfigWrapper.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontFactory.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontFactoryBase14Data.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontMetrics.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontMetricsBase14.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontMetricsFreetype.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontMetricsObject.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontSimple.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontTTFSubset.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontTrueType.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontType1.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontType3.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFontType1Base14.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfFunction.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfHintStream.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfIdentityEncoding.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfImage.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfInfo.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfMemDocument.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfNamesTree.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfOutlines.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfPage.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfPagesTree.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfPagesTreeCache.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfPainter.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfPainterMM.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfShadingPattern.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfSignOutputDevice.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfSignatureField.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfStreamedDocument.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfTable.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfTilingPattern.h" />
+    <ClInclude Include="E:\projects\p1\litePDF\podofo\src\doc\PdfXObject.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ZERO_CHECK.vcxproj">
-      <Project>{D02C619D-1A23-34F6-96CA-7FF03A9D0677}</Project>
+    <ProjectReference Include="E:\projects\p1\litePDF\podofo\ZERO_CHECK.vcxproj">
+      <Project>{62BAE02C-AEF4-34A1-A689-A3437508FD40}</Project>
       <Name>ZERO_CHECK</Name>
     </ProjectReference>
   </ItemGroup>

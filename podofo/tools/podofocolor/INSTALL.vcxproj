@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{4117ACB1-67B9-3C96-9B3D-EAB359D81443}</ProjectGuid>
+    <ProjectGuid>{2220FDE6-1A75-3AE5-A545-0C79B1AC5064}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
     <ProjectName>INSTALL</ProjectName>
@@ -62,7 +62,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\code\2.x\litePDF\podofo;C:\code\2.x\litePDF\deps\jpeg;C:\code\2.x\litePDF\deps\png;C:\code\2.x\litePDF\deps\zlib;C:\code\2.x\litePDF\podofo\src;C:\code\2.x\litePDF\podofo\..\deps\freetype;C:\code\2.x\litePDF\podofo\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\projects\p1\litePDF\podofo;E:\projects\p1\litePDF\deps\jpeg;E:\projects\p1\litePDF\deps\png;E:\projects\p1\litePDF\deps\zlib;E:\projects\p1\litePDF\podofo\src;E:\projects\p1\litePDF\podofo\..\deps\freetype;E:\projects\p1\litePDF\podofo\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -72,7 +72,7 @@
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -DBUILD_TYPE=$(Configuration) -P cmake_install.cmake
+"D:\Program Files\CMake\bin\cmake.exe" -DBUILD_TYPE=$(Configuration) -P cmake_install.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -84,7 +84,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\code\2.x\litePDF\podofo;C:\code\2.x\litePDF\deps\jpeg;C:\code\2.x\litePDF\deps\png;C:\code\2.x\litePDF\deps\zlib;C:\code\2.x\litePDF\podofo\src;C:\code\2.x\litePDF\podofo\..\deps\freetype;C:\code\2.x\litePDF\podofo\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\projects\p1\litePDF\podofo;E:\projects\p1\litePDF\deps\jpeg;E:\projects\p1\litePDF\deps\png;E:\projects\p1\litePDF\deps\zlib;E:\projects\p1\litePDF\podofo\src;E:\projects\p1\litePDF\podofo\..\deps\freetype;E:\projects\p1\litePDF\podofo\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -94,7 +94,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -DBUILD_TYPE=$(Configuration) -P cmake_install.cmake
+"D:\Program Files\CMake\bin\cmake.exe" -DBUILD_TYPE=$(Configuration) -P cmake_install.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -106,7 +106,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\code\2.x\litePDF\podofo;C:\code\2.x\litePDF\deps\jpeg;C:\code\2.x\litePDF\deps\png;C:\code\2.x\litePDF\deps\zlib;C:\code\2.x\litePDF\podofo\src;C:\code\2.x\litePDF\podofo\..\deps\freetype;C:\code\2.x\litePDF\podofo\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\projects\p1\litePDF\podofo;E:\projects\p1\litePDF\deps\jpeg;E:\projects\p1\litePDF\deps\png;E:\projects\p1\litePDF\deps\zlib;E:\projects\p1\litePDF\podofo\src;E:\projects\p1\litePDF\podofo\..\deps\freetype;E:\projects\p1\litePDF\podofo\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -116,7 +116,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -DBUILD_TYPE=$(Configuration) -P cmake_install.cmake
+"D:\Program Files\CMake\bin\cmake.exe" -DBUILD_TYPE=$(Configuration) -P cmake_install.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -128,7 +128,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\code\2.x\litePDF\podofo;C:\code\2.x\litePDF\deps\jpeg;C:\code\2.x\litePDF\deps\png;C:\code\2.x\litePDF\deps\zlib;C:\code\2.x\litePDF\podofo\src;C:\code\2.x\litePDF\podofo\..\deps\freetype;C:\code\2.x\litePDF\podofo\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\projects\p1\litePDF\podofo;E:\projects\p1\litePDF\deps\jpeg;E:\projects\p1\litePDF\deps\png;E:\projects\p1\litePDF\deps\zlib;E:\projects\p1\litePDF\podofo\src;E:\projects\p1\litePDF\podofo\..\deps\freetype;E:\projects\p1\litePDF\podofo\vcincludes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -138,7 +138,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -DBUILD_TYPE=$(Configuration) -P cmake_install.cmake
+"D:\Program Files\CMake\bin\cmake.exe" -DBUILD_TYPE=$(Configuration) -P cmake_install.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -149,7 +149,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\code\2.x\litePDF\podofo\CMakeFiles\2ecc303ab76826cabedecc5271846fea\INSTALL_force.rule">
+    <CustomBuild Include="E:\projects\p1\litePDF\podofo\CMakeFiles\4c8f547560e3c3ddcc41f78395d7e772\INSTALL_force.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
 cd .
@@ -160,8 +160,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/code/2.x/litePDF/podofo/CMakeFiles/2ecc303ab76826cabedecc5271846fea/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\code\2.x\litePDF\podofo\tools\podofocolor\CMakeFiles\INSTALL_force</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/projects/p1/litePDF/podofo/CMakeFiles/4c8f547560e3c3ddcc41f78395d7e772/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\projects\p1\litePDF\podofo\tools\podofocolor\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
@@ -173,8 +173,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/code/2.x/litePDF/podofo/CMakeFiles/2ecc303ab76826cabedecc5271846fea/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\code\2.x\litePDF\podofo\tools\podofocolor\CMakeFiles\INSTALL_force</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/projects/p1/litePDF/podofo/CMakeFiles/4c8f547560e3c3ddcc41f78395d7e772/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\projects\p1\litePDF\podofo\tools\podofocolor\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
@@ -186,8 +186,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/code/2.x/litePDF/podofo/CMakeFiles/2ecc303ab76826cabedecc5271846fea/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\code\2.x\litePDF\podofo\tools\podofocolor\CMakeFiles\INSTALL_force</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/projects/p1/litePDF/podofo/CMakeFiles/4c8f547560e3c3ddcc41f78395d7e772/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\projects\p1\litePDF\podofo\tools\podofocolor\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
@@ -199,18 +199,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/code/2.x/litePDF/podofo/CMakeFiles/2ecc303ab76826cabedecc5271846fea/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\code\2.x\litePDF\podofo\tools\podofocolor\CMakeFiles\INSTALL_force</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/projects/p1/litePDF/podofo/CMakeFiles/4c8f547560e3c3ddcc41f78395d7e772/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\projects\p1\litePDF\podofo\tools\podofocolor\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\code\2.x\litePDF\podofo\ZERO_CHECK.vcxproj">
-      <Project>{D02C619D-1A23-34F6-96CA-7FF03A9D0677}</Project>
+    <ProjectReference Include="E:\projects\p1\litePDF\podofo\ZERO_CHECK.vcxproj">
+      <Project>{62BAE02C-AEF4-34A1-A689-A3437508FD40}</Project>
       <Name>ZERO_CHECK</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\code\2.x\litePDF\podofo\ALL_BUILD.vcxproj">
-      <Project>{C3597CFC-6237-370D-9505-6D3FE84FD76E}</Project>
+    <ProjectReference Include="E:\projects\p1\litePDF\podofo\ALL_BUILD.vcxproj">
+      <Project>{59B2BD6A-59E7-3F69-8CB1-E296FA4149F2}</Project>
       <Name>ALL_BUILD</Name>
     </ProjectReference>
   </ItemGroup>

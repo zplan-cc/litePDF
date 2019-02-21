@@ -1,13 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\code\2.x\litePDF\litePDF\src\CMakeFiles\a3823ca1b556b19484b9b4acfc3eb8bf\INSTALL_force.rule">
+    <CustomBuild Include="E:\projects\p1\litePDF\litePDF\src\CMakeFiles\196d9b4b283cc85c6d35b9c570f77316\INSTALL_force.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{7BD07D7F-6268-3CBF-80F8-0C9584CBFCA3}</UniqueIdentifier>
+      <UniqueIdentifier>{918C6EEF-6E11-3A8F-BE12-A59C0CF0111D}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
