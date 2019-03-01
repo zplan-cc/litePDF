@@ -38,7 +38,8 @@
 #include "PdfDefinesPrivate.h"
 
 #include <iostream>
-#include <sstream>
+#include <sstream>\r\n#include <sstream>
+#include "fast_ostream.h"
 #include <iomanip>
 
 static void NormalizeCoordinates( double &coord1, double &coord2 );
@@ -91,7 +92,7 @@ std::string PdfRect::ToString() const
     return str;
 
     /*
-    std::ostringstream	oStr;
+    fast_oss	oStr;
     oStr << "[ ";
     oStr << std::setprecision( 3 ) << m_dLeft << " ";
     oStr << std::setprecision( 3 ) << m_dBottom << " ";

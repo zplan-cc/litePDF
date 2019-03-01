@@ -45,7 +45,8 @@
 #include "PdfMemDocument.h"
 #include "PdfDocument.h"
 
-#include <sstream>
+#include <sstream>\r\n#include <sstream>
+#include "fast_ostream.h"
 
 #define PI           3.141592654f
 

@@ -41,6 +41,9 @@
 #include "PdfFont.h"
 
 #include <sstream>
+#include "fast_ostream.h"
+#include <sstream>
+#include "fast_ostream.h"
 
 namespace PoDoFo {
 
@@ -98,7 +101,7 @@ void PdfAcroForm::Init( EPdfAcroFormDefaulAppearance eDefaultAppearance )
         pFontDict->GetDictionary().AddKey( pFont->GetIdentifier(), pFont->GetObject()->Reference() );
         
         // Create DA key
-        std::ostringstream oss;
+        fast_oss oss;
         PdfLocaleImbue(oss);
         oss << "0 0 0 rg /" << pFont->GetIdentifier().GetName() << " 12 Tf";
         this->GetObject()->GetDictionary().AddKey( PdfName("DA"), PdfString( oss.str() ) );

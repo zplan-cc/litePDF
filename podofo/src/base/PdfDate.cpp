@@ -36,6 +36,9 @@
 
 #include <string.h>
 #include <sstream>
+#include "fast_ostream.h"
+#include <sstream>
+#include "fast_ostream.h"
 
 namespace PoDoFo {
 
@@ -155,7 +158,7 @@ void PdfDate::CreateStringRepresentation()
     struct tm* pstm = localtime( &m_time );
     if( !pstm )
     {
-        std::ostringstream ss;
+        fast_oss ss;
         ss << "Invalid date specified with time_t value " << m_time << "\n";
         PdfError::DebugMessage( ss.str().c_str() );
         strcpy( m_szDate, INVALIDDATE );
@@ -178,7 +181,7 @@ void PdfDate::CreateStringRepresentation()
 #else
     if( strftime( szZone, ZONE_STRING_SIZE, "%z", &stm ) == 0 )
     {
-        std::ostringstream ss;
+        fast_oss ss;
         ss << "Generated invalid date from time_t value " << m_time
            << " (couldn't determine time zone)\n";
         PdfError::DebugMessage( ss.str().c_str() );
@@ -193,7 +196,7 @@ void PdfDate::CreateStringRepresentation()
 
     if( strftime( szDate, PDF_DATE_BUFFER_SIZE, "D:%Y%m%d%H%M%S", &stm ) == 0 )
     {
-        std::ostringstream ss;
+        fast_oss ss;
         ss << "Generated invalid date from time_t value " << m_time
            << "\n";
         PdfError::DebugMessage( ss.str().c_str() );

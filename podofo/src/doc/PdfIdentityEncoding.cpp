@@ -40,7 +40,8 @@
 
 #include "PdfFont.h"
 
-#include <sstream>
+#include <sstream>\r\n#include <sstream>
+#include "fast_ostream.h"
 #include <iostream>
 #include <stack>
 #include <iomanip>
@@ -54,7 +55,7 @@ PdfIdentityEncoding::PdfIdentityEncoding( int nFirstChar, int nLastChar, bool bA
     : PdfEncoding( nFirstChar, nLastChar, pToUnicode ), m_bAutoDelete( bAutoDelete )
 {
     // create a unique ID
-    std::ostringstream oss;
+    fast_oss oss;
     oss << "/Identity-H" << nFirstChar << "_" << nLastChar;
 
     m_id = PdfName( oss.str() );

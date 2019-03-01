@@ -41,7 +41,9 @@
 #include "base/PdfStream.h"
 
 #include <sstream>
-
+#include "fast_ostream.h"
+#include <sstream>
+#include "fast_ostream.h"
 namespace PoDoFo {
 
 PdfFileSpec::PdfFileSpec( const char* pszFilename, bool bEmbedd, PdfDocument* pParent, bool bStripPath)
@@ -145,7 +147,7 @@ void PdfFileSpec::Init( const wchar_t* pszFilename, const unsigned char* data, p
 
 PdfString PdfFileSpec::CreateFileSpecification( const wchar_t* pszFilename ) const
 {
-    std::ostringstream str;
+    fast_oss str;
     size_t                nLen = wcslen( pszFilename );
     char buff[5];
 
@@ -254,7 +256,7 @@ void PdfFileSpec::Init( const char* pszFilename, const unsigned char* data, ptrd
 
 PdfString PdfFileSpec::CreateFileSpecification( const char* pszFilename ) const
 {
-    std::ostringstream str;
+    fast_oss str;
     size_t                nLen = strlen( pszFilename );
     char buff[5];
 

@@ -76,7 +76,7 @@ static std::string EscapeName(T it, size_t length)
 {
     // Scan the input string once to find out how much memory we need
     // to reserve for the encoded result string. We could do this in one
-    // pass using a std::ostringstream instead, but it's a LOT slower.
+    // pass using a fast_oss instead, but it's a LOT slower.
     T it2(it);
     unsigned int outchars = 0;
     for (size_t i = 0; i < length; ++i)

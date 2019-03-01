@@ -39,7 +39,9 @@
 #include "PdfRefCountedInputDevice.h"
 
 #include <deque>
+
 #include <sstream>
+#include "fast_ostream.h"
 
 namespace PoDoFo {
 

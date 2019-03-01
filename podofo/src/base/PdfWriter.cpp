@@ -51,6 +51,8 @@
 #define LINEARIZATION_PADDING "          " 
 
 #include <iostream>
+#include <sstream>
+#include "fast_ostream.h"
 #include <stdlib.h>
 
 namespace PoDoFo {
@@ -711,7 +713,7 @@ void PdfWriter::CreateFileIdentifier( PdfString & identifier, const PdfObject* p
         }
         else
         {
-            std::ostringstream oss;
+            fast_oss oss;
             oss << "Error while retrieving info dictionary: " 
                 << rRef.ObjectNumber() << " " 
                 << rRef.GenerationNumber() << " R" << std::endl;

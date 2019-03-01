@@ -31,7 +31,8 @@
 
 #include <stdlib.h>
 #include <string.h>
-#include <sstream>
+#include <sstream>\r\n#include <sstream>
+#include "fast_ostream.h"
 
 #ifdef PODOFO_HAVE_OPENSSL
 // SHA-256
@@ -536,7 +537,7 @@ PdfEncrypt* PdfEncrypt::CreatePdfEncrypt( const PdfObject* pObject )
     if( !pObject->GetDictionary().HasKey( PdfName("Filter") ) ||
        pObject->GetDictionary().GetKey( PdfName("Filter" ) )->GetName() != PdfName("Standard") )
     {
-        std::ostringstream oss;
+        fast_oss oss;
         if( pObject->GetDictionary().HasKey( PdfName("Filter") ) )
         {
             oss << "Unsupported encryption filter: " << pObject->GetDictionary().GetKey( PdfName("Filter" ) )->GetName().GetName();
@@ -629,7 +630,7 @@ PdfEncrypt* PdfEncrypt::CreatePdfEncrypt( const PdfObject* pObject )
 #endif // PODOFO_HAVE_LIBIDN
     else
     {
-        std::ostringstream oss;
+        fast_oss oss;
         oss << "Unsupported encryption method Version=" << lV << " Revision=" << rValue;
         PODOFO_RAISE_ERROR_INFO( ePdfError_UnsupportedFilter, oss.str().c_str() );
     }

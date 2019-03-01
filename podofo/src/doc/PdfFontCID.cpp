@@ -53,7 +53,8 @@
 #include FT_FREETYPE_H
 
 #include <iostream>
-#include <sstream>
+#include <sstream>\r\n#include <sstream>
+#include "fast_ostream.h"
 
 namespace PoDoFo {
 
@@ -391,7 +392,7 @@ void PdfFontCID::CreateWidth( PdfObject* pFontDict ) const
 
 	if (nMax >= nMin) {
         // Now compact the array
-        std::ostringstream oss;
+        fast_oss oss;
         PdfArray array;
         array.reserve( nMax - nMin + 1 );
 
@@ -511,8 +512,8 @@ createUnicodeRanges(const GidToCodePoint& gidToCodePoint, int nFirstChar, int nL
 static void
 fillUnicodeStream( PdfStream* pStream , const GidToCodePoint& gidToCodePoint, int nFirstChar, int nLastChar, bool bSingleByteEncoding)
 {
-    std::ostringstream oss;
-    std::ostringstream range;
+    fast_oss oss;
+    fast_oss range;
 
     std::vector<TBFRange> vecRanges = createUnicodeRanges( gidToCodePoint, nFirstChar, nLastChar );
 
@@ -552,8 +553,8 @@ fillUnicodeStream( PdfStream* pStream , const GidToCodePoint& gidToCodePoint, in
 
             pStream->Append(oss.str());
 
-            oss.str("");
-            range.str("");
+            oss.clear();
+            range.clear();
             numberOfEntries = 0;
         }
 

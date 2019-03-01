@@ -45,6 +45,9 @@
 
 #include <iostream>
 #include <sstream>
+#include "fast_ostream.h"
+#include <sstream>
+#include "fast_ostream.h"
 
 namespace PoDoFo {
 
@@ -112,7 +115,7 @@ void PdfParserObject::ReadObjectNumber()
     
     if( !this->IsNextToken( "obj" ))
     {
-        std::ostringstream oss;
+        fast_oss oss;
         oss << "Error while reading object " << m_reference.ObjectNumber() << " " 
             << m_reference.GenerationNumber() << ": Next token is not 'obj'." << std::endl; 
         PODOFO_RAISE_ERROR_INFO( ePdfError_NoObject, oss.str().c_str() );
@@ -397,7 +400,7 @@ void PdfParserObject::DelayedStreamLoadImpl()
         } catch( PdfError & e ) {
             // TODO: track object ptr in error info so we don't have to do this memory-intensive
             // formatting here.
-            std::ostringstream s;
+            fast_oss s;
             s << "Unable to parse the stream for object " << Reference().ObjectNumber() << ' '
               << Reference().GenerationNumber() << " obj .";
             e.AddToCallstack( __FILE__, __LINE__, s.str().c_str());

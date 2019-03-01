@@ -49,9 +49,12 @@
 #include <cstring>
 #include <cstdlib>
 #include <sstream>
+#include "fast_ostream.h"
 #include <algorithm>
 #include <iostream>
 #include <limits>
+#include <sstream>
+#include "fast_ostream.h"
 
 using std::cerr;
 using std::endl;
@@ -679,7 +682,7 @@ void PdfParser::ReadXRefContents( pdf_long lOffset, bool bPositionAtEnd )
 
     if( m_visitedXRefOffsets.find( lOffset ) != m_visitedXRefOffsets.end() )
     {
-        std::ostringstream oss;
+        fast_oss oss;
         oss << "Cycle in xref structure. Offset  "
             << lOffset << " already visited.";
         
@@ -1042,7 +1045,7 @@ void PdfParser::ReadObjects()
             i = pEncrypt->GetReference().ObjectNumber();
             if( i <= 0 || static_cast<size_t>( i ) >= m_offsets.size () )
             {
-                std::ostringstream oss;
+                fast_oss oss;
                 oss << "Encryption dictionary references a nonexistent object " << pEncrypt->GetReference().ObjectNumber() << " " 
                     << pEncrypt->GetReference().GenerationNumber();
                 PODOFO_RAISE_ERROR_INFO( ePdfError_InvalidEncryptionDict, oss.str().c_str() );
@@ -1062,7 +1065,7 @@ void PdfParser::ReadObjects()
                 m_pEncrypt = PdfEncrypt::CreatePdfEncrypt( pObject );
                 delete pObject;
             } catch( PdfError & e ) {
-                std::ostringstream oss;
+                fast_oss oss;
                 oss << "Error while loading object " << pObject->Reference().ObjectNumber() << " " 
                     << pObject->Reference().GenerationNumber() << std::endl;
                 delete pObject;
@@ -1161,7 +1164,7 @@ void PdfParser::ReadObjectsInternal()
                 else
                     m_vecObjects->push_back( pObject );
             } catch( PdfError & e ) {
-                std::ostringstream oss;
+                fast_oss oss;
                 oss << "Error while loading object " << pObject->Reference().ObjectNumber() 
                     << " " << pObject->Reference().GenerationNumber() 
                     << " Offset = " << m_offsets[i].lOffset
@@ -1291,7 +1294,7 @@ void PdfParser::ReadObjectFromStream( int nObjNo, int )
     PdfParserObject* pStream = dynamic_cast<PdfParserObject*>(m_vecObjects->GetObject( PdfReference( nObjNo, 0 ) ) );
     if( !pStream )
     {
-        std::ostringstream oss;
+        fast_oss oss;
         oss << "Loading of object " << nObjNo << " 0 R failed!" << std::endl;
 
         PODOFO_RAISE_ERROR_INFO( ePdfError_NoObject, oss.str().c_str() );

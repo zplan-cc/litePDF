@@ -41,7 +41,9 @@
 #include "PdfDefinesPrivate.h"
 
 #include <sstream>
-
+#include "fast_ostream.h"
+#include <sstream>
+#include "fast_ostream.h"
 #include <string.h>
 
 namespace PoDoFo {
@@ -273,7 +275,7 @@ void PdfVariant::Write( PdfOutputDevice* pDevice, EPdfWriteMode eWriteMode, cons
             }
 
             // Use ostringstream, so that locale does not matter
-            std::ostringstream oss;
+            fast_oss oss;
             PdfLocaleImbue(oss);
             oss << std::fixed << m_Data.dNumber;
             std::string copy = oss.str();

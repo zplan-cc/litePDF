@@ -47,7 +47,8 @@
 
 #include <stdlib.h>
 #include <string.h>
-#include <sstream>
+#include <sstream>\r\n#include <sstream>
+#include "fast_ostream.h"
 
 using namespace std;
 

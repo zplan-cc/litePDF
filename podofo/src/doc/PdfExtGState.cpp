@@ -42,13 +42,15 @@
 #include "PdfPage.h"
 
 #include <sstream>
-
+#include "fast_ostream.h"
+#include <sstream>
+#include "fast_ostream.h"
 namespace PoDoFo {
 
 PdfExtGState::PdfExtGState( PdfVecObjects* pParent )
     : PdfElement( "ExtGState", pParent )
 {
-    std::ostringstream out;
+    fast_oss out;
     // We probably aren't doing anything locale sensitive here, but it's
     // best to be sure.
     PdfLocaleImbue(out);
@@ -64,7 +66,7 @@ PdfExtGState::PdfExtGState( PdfVecObjects* pParent )
 PdfExtGState::PdfExtGState( PdfDocument* pParent )
     : PdfElement( "ExtGState", pParent )
 {
-    std::ostringstream out;
+    fast_oss out;
     // We probably aren't doing anything locale sensitive here, but it's
     // best to be sure.
     PdfLocaleImbue(out);

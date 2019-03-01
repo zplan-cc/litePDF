@@ -42,7 +42,8 @@
 #include "PdfVariant.h"
 #include "PdfDefinesPrivate.h"
 
-#include <sstream>
+#include <sstream>\r\n#include <sstream>
+#include "fast_ostream.h"
 #include <fstream>
 
 #include <string.h>

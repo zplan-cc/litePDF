@@ -44,14 +44,15 @@
 
 #include "PdfFunction.h"
 
-#include <sstream>
+#include <sstream>\r\n#include <sstream>
+#include "fast_ostream.h"
 
 namespace PoDoFo {
 
 PdfShadingPattern::PdfShadingPattern( EPdfShadingPatternType eShadingType, PdfVecObjects* pParent )
     : PdfElement( "Pattern", pParent )
 {
-    std::ostringstream out;
+    fast_oss out;
     // We probably aren't doing anything locale sensitive here, but it's
     // best to be sure.
     PdfLocaleImbue(out);
@@ -67,7 +68,7 @@ PdfShadingPattern::PdfShadingPattern( EPdfShadingPatternType eShadingType, PdfVe
 PdfShadingPattern::PdfShadingPattern( EPdfShadingPatternType eShadingType, PdfDocument* pParent )
     : PdfElement( "Pattern", pParent )
 {
-    std::ostringstream out;
+    fast_oss out;
     // We probably aren't doing anything locale sensitive here, but it's
     // best to be sure.
     PdfLocaleImbue(out);

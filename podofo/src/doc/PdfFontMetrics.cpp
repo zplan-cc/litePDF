@@ -41,7 +41,8 @@
 
 #include "PdfFontFactory.h"
 
-#include <sstream>
+#include <sstream>\r\n#include <sstream>
+#include "fast_ostream.h"
 
 #include <wchar.h>
 #include <ft2build.h>

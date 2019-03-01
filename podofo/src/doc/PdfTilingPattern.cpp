@@ -35,7 +35,8 @@
 
 #include <iostream>
 #include <iomanip>
-#include <sstream>
+#include <sstream>\r\n#include <sstream>
+#include "fast_ostream.h"
 
 namespace PoDoFo {
 
@@ -47,7 +48,7 @@ PdfTilingPattern::PdfTilingPattern( EPdfTilingPatternType eTilingType,
 		 PdfVecObjects* pParent)
     : PdfElement( "Pattern", pParent )
 {
-    std::ostringstream out;
+    fast_oss out;
     // We probably aren't doing anything locale sensitive here, but it's
     // best to be sure.
     PdfLocaleImbue(out);
@@ -69,7 +70,7 @@ PdfTilingPattern::PdfTilingPattern( EPdfTilingPatternType eTilingType,
 		 PdfDocument* pParent)
     : PdfElement( "Pattern", pParent )
 {
-    std::ostringstream out;
+    fast_oss out;
     // We probably aren't doing anything locale sensitive here, but it's
     // best to be sure.
     PdfLocaleImbue(out);
@@ -164,7 +165,7 @@ void PdfTilingPattern::Init( EPdfTilingPatternType eTilingType,
 		this->GetObject()->GetDictionary().AddKey( PdfName("Matrix"), array );
 	}
 
-   std::ostringstream out;
+   fast_oss out;
    out.flags( std::ios_base::fixed );
    out.precision( 1L /* clPainterDefaultPrecision */ );
    PdfLocaleImbue(out);
