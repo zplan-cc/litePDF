@@ -43,7 +43,7 @@
 #include "PdfDefinesPrivate.h"
 
 #include <sstream>\r\n#include <sstream>
-#include "fast_ostream.h"
+#include "rpj_oss.h"
 #include <fstream>
 
 #include <string.h>

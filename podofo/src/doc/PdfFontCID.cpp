@@ -54,7 +54,7 @@
 
 #include <iostream>
 #include <sstream>\r\n#include <sstream>
-#include "fast_ostream.h"
+#include "rpj_oss.h"
 
 namespace PoDoFo {
 
@@ -392,7 +392,7 @@ void PdfFontCID::CreateWidth( PdfObject* pFontDict ) const
 
 	if (nMax >= nMin) {
         // Now compact the array
-        fast_oss oss;
+        rpj_oss oss;
         PdfArray array;
         array.reserve( nMax - nMin + 1 );
 
@@ -512,8 +512,8 @@ createUnicodeRanges(const GidToCodePoint& gidToCodePoint, int nFirstChar, int nL
 static void
 fillUnicodeStream( PdfStream* pStream , const GidToCodePoint& gidToCodePoint, int nFirstChar, int nLastChar, bool bSingleByteEncoding)
 {
-    fast_oss oss;
-    fast_oss range;
+    rpj_oss oss;
+    rpj_oss range;
 
     std::vector<TBFRange> vecRanges = createUnicodeRanges( gidToCodePoint, nFirstChar, nLastChar );
 
@@ -547,9 +547,9 @@ fillUnicodeStream( PdfStream* pStream , const GidToCodePoint& gidToCodePoint, in
     {
         if( numberOfEntries == 99 ) 
         {
-            oss << numberOfEntries << " beginbfrange" << std::endl;
+            oss << numberOfEntries << " beginbfrange\n";
             oss << range.str();
-            oss << "endbfrange" << std::endl;
+            oss << "endbfrange\n";
 
             pStream->Append(oss.str());
 
@@ -584,16 +584,16 @@ fillUnicodeStream( PdfStream* pStream , const GidToCodePoint& gidToCodePoint, in
             ++it2;
         }
 
-        range << "]" << std::endl;
+        range << "]\n";
         ++it;
         ++numberOfEntries;
     }
 
     if( numberOfEntries > 0 ) 
     {
-        oss << numberOfEntries << " beginbfrange" << std::endl;
+        oss << numberOfEntries << " beginbfrange\n";
         oss << range.str();
-        oss << "endbfrange" << std::endl;
+        oss << "endbfrange\n";
         pStream->Append( oss.str().c_str() );
     }
 

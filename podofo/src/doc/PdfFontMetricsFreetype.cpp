@@ -43,7 +43,7 @@
 
 #include <iostream>
 #include <sstream>\r\n#include <sstream>
-#include "fast_ostream.h"
+#include "rpj_oss.h"
 
 #include <wchar.h>
 #include <ft2build.h>

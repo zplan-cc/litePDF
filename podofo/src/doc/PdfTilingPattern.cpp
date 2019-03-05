@@ -36,7 +36,7 @@
 #include <iostream>
 #include <iomanip>
 #include <sstream>\r\n#include <sstream>
-#include "fast_ostream.h"
+#include "rpj_oss.h"
 
 namespace PoDoFo {
 
@@ -48,10 +48,10 @@ PdfTilingPattern::PdfTilingPattern( EPdfTilingPatternType eTilingType,
 		 PdfVecObjects* pParent)
     : PdfElement( "Pattern", pParent )
 {
-    fast_oss out;
+    rpj_oss out;
     // We probably aren't doing anything locale sensitive here, but it's
     // best to be sure.
-    PdfLocaleImbue(out);
+    //PdfLocaleImbue(out);
 
     // Implementation note: the identifier is always
     // Prefix+ObjectNo. Prefix is /Ft for fonts.
@@ -70,10 +70,10 @@ PdfTilingPattern::PdfTilingPattern( EPdfTilingPatternType eTilingType,
 		 PdfDocument* pParent)
     : PdfElement( "Pattern", pParent )
 {
-    fast_oss out;
+    rpj_oss out;
     // We probably aren't doing anything locale sensitive here, but it's
     // best to be sure.
-    PdfLocaleImbue(out);
+    //PdfLocaleImbue(out);
 
     // Implementation note: the identifier is always
     // Prefix+ObjectNo. Prefix is /Ft for fonts.
@@ -165,10 +165,10 @@ void PdfTilingPattern::Init( EPdfTilingPatternType eTilingType,
 		this->GetObject()->GetDictionary().AddKey( PdfName("Matrix"), array );
 	}
 
-   fast_oss out;
-   out.flags( std::ios_base::fixed );
+   rpj_oss out;
+   //out.flags( std::ios_base::fixed );
    out.precision( 1L /* clPainterDefaultPrecision */ );
-   PdfLocaleImbue(out);
+   //PdfLocaleImbue(out);
 
 	if (pImage) {
 		AddToResources(pImage->GetIdentifier(), pImage->GetObjectReference(), PdfName("XObject"));
@@ -176,8 +176,8 @@ void PdfTilingPattern::Init( EPdfTilingPatternType eTilingType,
       out << rRect.GetWidth() << " 0 0 "
           << rRect.GetHeight() << " "
           << rRect.GetLeft() << " " 
-          << rRect.GetBottom() << " cm" << std::endl;
-		out << "/" << pImage->GetIdentifier().GetName() << " Do" << std::endl;
+          << rRect.GetBottom() << " cm\n";
+		out << "/" << pImage->GetIdentifier().GetName() << " Do\n";
 	} else {
 		if (doFill) {
 			out << fillR << " " << fillG << " " << fillB << " rg" << " ";
@@ -201,26 +201,26 @@ void PdfTilingPattern::Init( EPdfTilingPatternType eTilingType,
 		case ePdfTilingPatternType_BDiagonal:
 			out << left          << " " << bottom         << " m " << right         << " " << top            << " l ";
 			out << left - whalf  << " " << top - hhalf    << " m " << left + whalf  << " " << top + hhalf    << " l ";
-			out << right - whalf << " " << bottom - hhalf << " m " << right + whalf << " " << bottom + hhalf << " l" << std::endl;
+			out << right - whalf << " " << bottom - hhalf << " m " << right + whalf << " " << bottom + hhalf << " l\n";
 			break;
 		case ePdfTilingPatternType_Cross:
 			out << left          << " " << bottom + hhalf << " m " << right         << " " << bottom + hhalf << " l ";
-			out << left + whalf  << " " << bottom         << " m " << left + whalf  << " " << top            << " l" << std::endl;
+			out << left + whalf  << " " << bottom         << " m " << left + whalf  << " " << top            << " l\n";
 			break;
 		case ePdfTilingPatternType_DiagCross:
 			out << left          << " " << bottom         << " m " << right         << " " << top            << " l ";
-			out << left          << " " << top            << " m " << right         << " " << bottom         << " l" << std::endl;
+			out << left          << " " << top            << " m " << right         << " " << bottom         << " l\n";
 			break;
 		case ePdfTilingPatternType_FDiagonal:
 			out << left          << " " << top            << " m " << right         << " " << bottom         << " l ";
 			out << left - whalf  << " " << bottom + hhalf << " m " << left + whalf  << " " << bottom - hhalf << " l ";
-			out << right - whalf << " " << top + hhalf    << " m " << right + whalf << " " << top - hhalf    << " l" << std::endl;
+			out << right - whalf << " " << top + hhalf    << " m " << right + whalf << " " << top - hhalf    << " l\n";
 			break;
 		case ePdfTilingPatternType_Horizontal:
 			out << left          << " " << bottom + hhalf << " m " << right         << " " << bottom + hhalf << " l ";
 			break;
 		case ePdfTilingPatternType_Vertical:
-			out << left + whalf  << " " << bottom         << " m " << left + whalf  << " " << top            << " l" << std::endl;
+			out << left + whalf  << " " << bottom         << " m " << left + whalf  << " " << top            << " l\n";
 			break;
 		case ePdfTilingPatternType_Image:
 			/* This is handled above, based on the 'pImage' variable */

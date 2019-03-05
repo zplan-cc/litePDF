@@ -41,7 +41,7 @@
 #include <deque>
 
 #include <sstream>
-#include "fast_ostream.h"
+#include "rpj_oss.h"
 
 namespace PoDoFo {
 

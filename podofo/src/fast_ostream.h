@@ -138,27 +138,27 @@ class stack_devicebuf : public std::streambuf {
 //
 // fast ostringstream
 //
-class fast_oss : public std::ostream {
+class rpj_oss : public std::ostream {
  public:
-  fast_oss() : std::ostream(&_dev) {}
-  ~fast_oss() = default;
+  rpj_oss() : std::ostream(&_dev) {}
+  ~rpj_oss() = default;
 
-  fast_oss(const fast_oss& other)
+  rpj_oss(const rpj_oss& other)
       : std::basic_ios<char>(), std::ostream(&_dev), _dev(other._dev) {}
 
-  fast_oss(fast_oss&& other)
+  rpj_oss(rpj_oss&& other)
       : std::basic_ios<char>(),
         std::ostream(&_dev),
         _dev(std::move(other._dev)) {
     other.clear();
   }
 
-  fast_oss& operator=(fast_oss other) {
+  rpj_oss& operator=(rpj_oss other) {
     swap(*this, other);
     return *this;
   }
 
-  void swap(fast_oss& first, fast_oss& second)  // nothrow
+  void swap(rpj_oss& first, rpj_oss& second)  // nothrow
   {
     using std::swap;
     swap(first._dev, second._dev);

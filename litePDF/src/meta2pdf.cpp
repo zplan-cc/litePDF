@@ -3133,7 +3133,7 @@ static void drawPath(struct processData *pd, bool onlyStroke, bool polyFillMode 
 
    if (pd->currentDCState.penSet && pd->currentDCState.iBkMode == OPAQUE && pd->currentDCState.bkColorSet) {
       if (selectPen(pd, true)) {
-         std::string path = painter->GetCurrentPath().str();
+         std::string path = painter->GetCurrentPath();
          COLORREF color = pd->currentDCState.bkColor;
 
          painter->SetStrokingColor(GetRValue(color)/255.0, GetGValue(color)/255.0, GetBValue(color)/255.0);

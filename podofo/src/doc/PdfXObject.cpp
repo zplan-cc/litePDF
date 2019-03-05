@@ -46,7 +46,7 @@
 #include "PdfDocument.h"
 
 #include <sstream>\r\n#include <sstream>
-#include "fast_ostream.h"
+#include "rpj_oss.h"
 
 #define PI           3.141592654f
 

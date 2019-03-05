@@ -41,7 +41,7 @@
 #include "PdfFont.h"
 
 #include <sstream>\r\n#include <sstream>
-#include "fast_ostream.h"
+#include "rpj_oss.h"
 #include <iostream>
 #include <stack>
 #include <iomanip>
@@ -55,7 +55,7 @@ PdfIdentityEncoding::PdfIdentityEncoding( int nFirstChar, int nLastChar, bool bA
     : PdfEncoding( nFirstChar, nLastChar, pToUnicode ), m_bAutoDelete( bAutoDelete )
 {
     // create a unique ID
-    fast_oss oss;
+    rpj_oss oss;
     oss << "/Identity-H" << nFirstChar << "_" << nLastChar;
 
     m_id = PdfName( oss.str() );
@@ -89,7 +89,7 @@ PdfString PdfIdentityEncoding::ConvertToUnicode( const PdfString & rEncodedStrin
     }
     else {
         /* Identity-H means 1-1 mapping */	  
-        //std::cout << "convertToUnicode(" << rEncodedString.IsUnicode() << ")" << std::endl;
+        //std::cout << "convertToUnicode(" << rEncodedString.IsUnicode() << ")\n";
         return ( rEncodedString.IsUnicode() ) ? PdfString(rEncodedString) : rEncodedString.ToUnicode();
     }
 }

@@ -113,13 +113,13 @@ PdfPainter::PdfPainter()
   m_curColor( PdfColor( 0.0, 0.0, 0.0 ) ),
   m_isTextOpen( false ), m_oss(), m_curPath(), m_isCurColorICCDepend( false ), m_CSTag()
 {
-    m_oss.flags( std::ios_base::fixed );
+//    m_oss.flags( std::ios_base::fixed );
     m_oss.precision( clPainterDefaultPrecision );
-    PdfLocaleImbue(m_oss);
+//    PdfLocaleImbue(m_oss);
 
-    m_curPath.flags( std::ios_base::fixed );
+//    m_curPath.flags( std::ios_base::fixed );
     m_curPath.precision( clPainterDefaultPrecision );
-    PdfLocaleImbue(m_curPath);
+//    PdfLocaleImbue(m_curPath);
 
     lpx  = 
     lpy  = 
@@ -268,7 +268,7 @@ void PdfPainter::SetStrokingShadingPattern( const PdfShadingPattern & rPattern )
     this->AddToPageResources( rPattern.GetIdentifier(), rPattern.GetObject()->Reference(), PdfName("Pattern") );
 
     m_oss.clear();
-    m_oss << "/Pattern CS /" << rPattern.GetIdentifier().GetName() << " SCN" << std::endl;
+    m_oss << "/Pattern CS /" << rPattern.GetIdentifier().GetName() << " SCN\n";
     m_pCanvas->Append( m_oss.str() );
 }
 
@@ -279,7 +279,7 @@ void PdfPainter::SetShadingPattern( const PdfShadingPattern & rPattern )
     this->AddToPageResources( rPattern.GetIdentifier(), rPattern.GetObject()->Reference(), PdfName("Pattern") );
 
     m_oss.clear();
-    m_oss << "/Pattern cs /" << rPattern.GetIdentifier().GetName() << " scn" << std::endl;
+    m_oss << "/Pattern cs /" << rPattern.GetIdentifier().GetName() << " scn\n";
     m_pCanvas->Append( m_oss.str() );
 }
 
@@ -290,7 +290,7 @@ void PdfPainter::SetStrokingTilingPattern( const PdfTilingPattern & rPattern )
     this->AddToPageResources( rPattern.GetIdentifier(), rPattern.GetObject()->Reference(), PdfName("Pattern") );
 
     m_oss.clear();
-    m_oss << "/Pattern CS /" << rPattern.GetIdentifier().GetName() << " SCN" << std::endl;
+    m_oss << "/Pattern CS /" << rPattern.GetIdentifier().GetName() << " SCN\n";
     m_pCanvas->Append( m_oss.str() );
 }
 
@@ -299,7 +299,7 @@ void PdfPainter::SetStrokingTilingPattern( const std::string &rPatternName )
     PODOFO_RAISE_LOGIC_IF( !m_pCanvas, "Call SetPage() first before doing drawing operations." );    
 
     m_oss.clear();
-    m_oss << "/Pattern CS /" << rPatternName << " SCN" << std::endl;
+    m_oss << "/Pattern CS /" << rPatternName << " SCN\n";
     m_pCanvas->Append( m_oss.str() );
 }
 
@@ -310,7 +310,7 @@ void PdfPainter::SetTilingPattern( const PdfTilingPattern & rPattern )
     this->AddToPageResources( rPattern.GetIdentifier(), rPattern.GetObject()->Reference(), PdfName("Pattern") );
 
     m_oss.clear();
-    m_oss << "/Pattern cs /" << rPattern.GetIdentifier().GetName() << " scn" << std::endl;
+    m_oss << "/Pattern cs /" << rPattern.GetIdentifier().GetName() << " scn\n";
     m_pCanvas->Append( m_oss.str() );
 }
 
@@ -319,7 +319,7 @@ void PdfPainter::SetTilingPattern( const std::string &rPatternName )
     PODOFO_RAISE_LOGIC_IF( !m_pCanvas, "Call SetPage() first before doing drawing operations." );    
 
     m_oss.clear();
-    m_oss << "/Pattern cs /" << rPatternName << " scn" << std::endl;
+    m_oss << "/Pattern cs /" << rPatternName << " scn\n";
     m_pCanvas->Append( m_oss.str() );
 }
 
@@ -336,21 +336,21 @@ void PdfPainter::SetStrokingColor( const PdfColor & rColor )
             m_oss << rColor.GetRed()   << " "
                   << rColor.GetGreen() << " "
                   << rColor.GetBlue() 
-                  << " RG" << std::endl;
+                  << " RG\n";
             break;
         case ePdfColorSpace_DeviceCMYK:
             m_oss << rColor.GetCyan()    << " " 
                   << rColor.GetMagenta() << " " 
                   << rColor.GetYellow()  << " " 
                   << rColor.GetBlack() 
-                  << " K" << std::endl;
+                  << " K\n";
             break;
         case ePdfColorSpace_DeviceGray:
-            m_oss << rColor.GetGrayScale() << " G" << std::endl;
+            m_oss << rColor.GetGrayScale() << " G\n";
             break;
         case ePdfColorSpace_Separation:
 			m_pPage->AddColorResource( rColor );
-			m_oss << "/ColorSpace" << PdfName( rColor.GetName() ).GetEscapedName() << " CS " << rColor.GetDensity() << " SCN" << std::endl;
+			m_oss << "/ColorSpace" << PdfName( rColor.GetName() ).GetEscapedName() << " CS " << rColor.GetDensity() << " SCN\n";
             break;
         case ePdfColorSpace_CieLab:
 			m_pPage->AddColorResource( rColor );
@@ -358,7 +358,7 @@ void PdfPainter::SetStrokingColor( const PdfColor & rColor )
 				  << rColor.GetCieL() << " " 
                   << rColor.GetCieA() << " " 
                   << rColor.GetCieB() <<
-				  " SCN" << std::endl;
+				  " SCN\n";
             break;
         case ePdfColorSpace_Unknown:
         case ePdfColorSpace_Indexed:
@@ -386,21 +386,21 @@ void PdfPainter::SetColor( const PdfColor & rColor )
             m_oss << rColor.GetRed()   << " "
                   << rColor.GetGreen() << " "
                   << rColor.GetBlue() 
-                  << " rg" << std::endl;
+                  << " rg\n";
             break;
         case ePdfColorSpace_DeviceCMYK:
             m_oss << rColor.GetCyan()    << " " 
                   << rColor.GetMagenta() << " " 
                   << rColor.GetYellow()  << " " 
                   << rColor.GetBlack() 
-                  << " k" << std::endl;
+                  << " k\n";
             break;
         case ePdfColorSpace_DeviceGray:
-            m_oss << rColor.GetGrayScale() << " g" << std::endl;
+            m_oss << rColor.GetGrayScale() << " g\n";
             break;
         case ePdfColorSpace_Separation:
 			m_pPage->AddColorResource( rColor );
-            m_oss << "/ColorSpace" << PdfName( rColor.GetName() ).GetEscapedName() << " cs " << rColor.GetDensity() << " scn" << std::endl;
+            m_oss << "/ColorSpace" << PdfName( rColor.GetName() ).GetEscapedName() << " cs " << rColor.GetDensity() << " scn\n";
             break;
         case ePdfColorSpace_CieLab:
 			m_pPage->AddColorResource( rColor );
@@ -408,7 +408,7 @@ void PdfPainter::SetColor( const PdfColor & rColor )
 				  << rColor.GetCieL() << " " 
                   << rColor.GetCieA() << " " 
                   << rColor.GetCieB() <<
-				  " scn" << std::endl;
+				  " scn\n";
 			break;
         case ePdfColorSpace_Unknown:
         case ePdfColorSpace_Indexed:
@@ -425,7 +425,7 @@ void PdfPainter::SetStrokeWidth( double dWidth )
     PODOFO_RAISE_LOGIC_IF( !m_pCanvas, "Call SetPage() first before doing drawing operations." );    
 
     m_oss.clear();
-    m_oss << dWidth << " w" << std::endl;
+    m_oss << dWidth << " w\n";
     m_pCanvas->Append( m_oss.str() );
 }
 
@@ -525,7 +525,7 @@ void PdfPainter::SetStrokeStyle( EPdfStrokeStyle eStyle, const char* pszCustom, 
         m_oss << "] 0";
     }
 
-    m_oss << " d" << std::endl;
+    m_oss << " d\n";
     m_pCanvas->Append( m_oss.str() );
 }
 
@@ -534,7 +534,7 @@ void PdfPainter::SetLineCapStyle( EPdfLineCapStyle eCapStyle )
     PODOFO_RAISE_LOGIC_IF( !m_pCanvas, "Call SetPage() first before doing drawing operations." );    
 
     m_oss.clear();
-    m_oss << static_cast<int>(eCapStyle) << " J" << std::endl;
+    m_oss << static_cast<int>(eCapStyle) << " J\n";
     m_pCanvas->Append( m_oss.str() );
 }
 
@@ -543,7 +543,7 @@ void PdfPainter::SetLineJoinStyle( EPdfLineJoinStyle eJoinStyle )
     PODOFO_RAISE_LOGIC_IF( !m_pCanvas, "Call SetPage() first before doing drawing operations." );    
 
     m_oss.clear();
-    m_oss << static_cast<int>(eJoinStyle) << " j" << std::endl;
+    m_oss << static_cast<int>(eJoinStyle) << " j\n";
     m_pCanvas->Append( m_oss.str() );
 }
 
@@ -575,7 +575,7 @@ void PdfPainter::SetCurrentTextRenderingMode( void )
 {
     PODOFO_RAISE_LOGIC_IF( !m_pCanvas, "Call SetPage() first before doing drawing operations." );
 
-    m_oss << (int) currentTextRenderingMode << " Tr" << std::endl;
+    m_oss << (int) currentTextRenderingMode << " Tr\n";
 }
 
 void PdfPainter::SetClipRect( double dX, double dY, double dWidth, double dHeight )
@@ -587,15 +587,9 @@ void PdfPainter::SetClipRect( double dX, double dY, double dWidth, double dHeigh
           << dY << " "
           << dWidth << " "
           << dHeight        
-          << " re W n" << std::endl;
-    m_pCanvas->Append( m_oss.str() );
-
-	 m_curPath
-			 << dX << " "
-          << dY << " "
-          << dWidth << " "
-          << dHeight        
-          << " re W n" << std::endl;
+          << " re W n\n";
+    m_curPath << m_oss;
+    m_pCanvas->Append(m_oss.str());
 }
 
 void PdfPainter::SetMiterLimit(double value)
@@ -603,7 +597,7 @@ void PdfPainter::SetMiterLimit(double value)
     PODOFO_RAISE_LOGIC_IF( !m_pCanvas, "Call SetPage() first before doing drawing operations." );    
 
     m_oss.clear();
-    m_oss << value << " M" << std::endl;
+    m_oss << value << " M\n";
     m_pCanvas->Append( m_oss.str() );
 }
 
@@ -611,22 +605,11 @@ void PdfPainter::DrawLine( double dStartX, double dStartY, double dEndX, double 
 {
     PODOFO_RAISE_LOGIC_IF( !m_pCanvas, "Call SetPage() first before doing drawing operations." );    
 
-	 m_curPath.clear();
-    m_curPath
-		    << dStartX << " "
-          << dStartY
-          << " m "
-          << dEndX << " "
-          << dEndY        
-          << " l" << std::endl;
-
     m_oss.clear();
-    m_oss << dStartX << " "
-          << dStartY
-          << " m "
-          << dEndX << " "
-          << dEndY        
-          << " l S" << std::endl;
+    m_oss << dStartX << " " << dStartY << " m " << dEndX << " " << dEndY;
+    m_curPath = m_oss;
+    m_curPath << " l\n";
+    m_oss << " l S\n";
     m_pCanvas->Append( m_oss.str() );
 }
 
@@ -654,21 +637,15 @@ void PdfPainter::Rectangle( double dX, double dY, double dWidth, double dHeight,
     } 
     else 
     {
-        m_curPath 
-				  << dX << " "
-              << dY << " "
-              << dWidth << " "
-              << dHeight        
-              << " re" << std::endl;
-
     m_oss.clear();
         m_oss << dX << " "
             << dY << " "
             << dWidth << " "
             << dHeight        
-              << " re" << std::endl;
-    m_pCanvas->Append( m_oss.str() );
-}
+              << " re\n";
+    m_curPath << m_oss;
+    m_pCanvas->Append(m_oss.str());
+    }
 }
 
 void PdfPainter::Ellipse( double dX, double dY, double dWidth, double dHeight )
@@ -681,37 +658,23 @@ void PdfPainter::Ellipse( double dX, double dY, double dWidth, double dHeight )
 
     ConvertRectToBezier( dX, dY, dWidth, dHeight, dPointX, dPointY );
 
-    m_curPath
-			 << dPointX[0] << " "
-          << dPointY[0]
-          << " m" << std::endl;
-
     m_oss.clear();
     m_oss << dPointX[0] << " "
           << dPointY[0]
-          << " m" << std::endl;
-
+          << " m\n";
     for( i=1;i<BEZIER_POINTS; i+=3 )
     {
-        m_curPath
-				  << dPointX[i] << " "
-              << dPointY[i] << " "
-              << dPointX[i+1] << " "
-              << dPointY[i+1] << " "
-              << dPointX[i+2] << " "
-              << dPointY[i+2]    
-              << " c" << std::endl;
-
         m_oss << dPointX[i] << " "
               << dPointY[i] << " "
               << dPointX[i+1] << " "
               << dPointY[i+1] << " "
               << dPointX[i+2] << " "
               << dPointY[i+2]    
-              << " c" << std::endl;
+              << " c\n";
     }
 
-    m_pCanvas->Append( m_oss.str() );
+    m_curPath << m_oss;
+    m_pCanvas->Append(m_oss.str());
 }
 
 void PdfPainter::Circle( double dX, double dY, double dRadius )
@@ -806,22 +769,22 @@ void PdfPainter::DrawText( double dX, double dY, const PdfString & sText, long l
 
 
     m_oss.clear();
-    m_oss << "BT" << std::endl << "/" << m_pFont->GetIdentifier().GetName()
+    m_oss << "BT\n" << "/" << m_pFont->GetIdentifier().GetName()
           << " "  << m_pFont->GetFontSize()
-          << " Tf" << std::endl;
+          << " Tf\n";
 
     if (currentTextRenderingMode != ePdfTextRenderingMode_Fill) {
         SetCurrentTextRenderingMode();
     }
 
     //if( m_pFont->GetFontScale() != 100.0F ) - this value is kept between text blocks
-    m_oss << m_pFont->GetFontScale() << " Tz" << std::endl;
+    m_oss << m_pFont->GetFontScale() << " Tz\n";
 
     //if( m_pFont->GetFontCharSpace() != 0.0F )  - this value is kept between text blocks
-    m_oss << m_pFont->GetFontCharSpace() * m_pFont->GetFontSize() / 100.0 << " Tc" << std::endl;
+    m_oss << m_pFont->GetFontCharSpace() * m_pFont->GetFontSize() / 100.0 << " Tc\n";
 
-    m_oss << dX << std::endl
-          << dY << std::endl << "Td ";
+    m_oss << dX << "\n"
+          << dY << "\n" << "Td ";
 
     m_pCanvas->Append( m_oss.str() );
     m_pFont->WriteStringToStream( sString, m_pCanvas );
@@ -850,21 +813,21 @@ void PdfPainter::BeginText( double dX, double dY )
     this->AddToPageResources( m_pFont->GetIdentifier(), m_pFont->GetObject()->Reference(), PdfName("Font") );
 
     m_oss.clear();
-    m_oss << "BT" << std::endl << "/" << m_pFont->GetIdentifier().GetName()
+    m_oss << "BT\n" << "/" << m_pFont->GetIdentifier().GetName()
           << " "  << m_pFont->GetFontSize()
-          << " Tf" << std::endl;
+          << " Tf\n";
 
     if (currentTextRenderingMode != ePdfTextRenderingMode_Fill) {
         SetCurrentTextRenderingMode();
     }
 
     //if( m_pFont->GetFontScale() != 100.0F ) - this value is kept between text blocks
-    m_oss << m_pFont->GetFontScale() << " Tz" << std::endl;
+    m_oss << m_pFont->GetFontScale() << " Tz\n";
 
     //if( m_pFont->GetFontCharSpace() != 0.0F )  - this value is kept between text blocks
-    m_oss << m_pFont->GetFontCharSpace() * m_pFont->GetFontSize() / 100.0 << " Tc" << std::endl;
+    m_oss << m_pFont->GetFontCharSpace() * m_pFont->GetFontSize() / 100.0 << " Tc\n";
 
-    m_oss << dX << " " << dY << " Td" << std::endl ;
+    m_oss << dX << " " << dY << " Td\n" ;
 
     m_pCanvas->Append( m_oss.str() );
 
@@ -881,7 +844,7 @@ void PdfPainter::MoveTextPos( double dX, double dY )
     }
 
     m_oss.clear();
-    m_oss << dX << " " << dY << " Td" << std::endl ;
+    m_oss << dX << " " << dY << " Td\n" ;
     m_pCanvas->Append( m_oss.str() );
 }
 
@@ -1341,12 +1304,12 @@ void PdfPainter::DrawXObject( double dX, double dY, PdfXObject* pObject, double 
 
 	std::streamsize oldPrecision = m_oss.precision(clPainterHighPrecision);
     m_oss.clear();
-    m_oss << "q" << std::endl
+    m_oss << "q\n"
           << dScaleX << " 0 0 "
           << dScaleY << " "
           << dX << " " 
-          << dY << " cm" << std::endl
-          << "/" << pObject->GetIdentifier().GetName() << " Do" << std::endl << "Q" << std::endl;
+          << dY << " cm\n"
+          << "/" << pObject->GetIdentifier().GetName() << " Do\n" << "Q\n";
 	m_oss.precision(oldPrecision);
     
     m_pCanvas->Append( m_oss.str() );
@@ -1356,7 +1319,7 @@ void PdfPainter::ClosePath()
 {
     PODOFO_RAISE_LOGIC_IF( !m_pCanvas, "Call SetPage() first before doing drawing operations." );
 
-	 m_curPath << "h" << std::endl;
+	 m_curPath << "h\n";
 
     m_pCanvas->Append( "h\n" );
 }
@@ -1365,15 +1328,11 @@ void PdfPainter::LineTo( double dX, double dY )
 {
     PODOFO_RAISE_LOGIC_IF( !m_pCanvas, "Call SetPage() first before doing drawing operations." );
     
-	 m_curPath
-			 << dX << " "
-          << dY
-          << " l" << std::endl;
-
     m_oss.clear();
     m_oss << dX << " "
           << dY
-          << " l" << std::endl;
+          << " l\n";
+    m_curPath << m_oss;
     m_pCanvas->Append( m_oss.str() );
 }
 
@@ -1381,30 +1340,17 @@ void PdfPainter::MoveTo( double dX, double dY )
 {
     PODOFO_RAISE_LOGIC_IF( !m_pCanvas, "Call SetPage() first before doing drawing operations." );
     
-    m_curPath
-        << dX << " "
-        << dY
-        << " m" << std::endl;
-
     m_oss.clear();
     m_oss << dX << " "
           << dY
-          << " m" << std::endl;
+          << " m\n";
+    m_curPath << m_oss;
     m_pCanvas->Append( m_oss.str() );
 }
 
 void PdfPainter::CubicBezierTo( double dX1, double dY1, double dX2, double dY2, double dX3, double dY3 )
 {
     PODOFO_RAISE_LOGIC_IF( !m_pCanvas, "Call SetPage() first before doing drawing operations." );
-
-	 m_curPath
-         << dX1 << " "
-         << dY1 << " "
-         << dX2 << " "
-         << dY2 << " "
-         << dX3 << " "
-         << dY3 
-         << " c" << std::endl;
 
     m_oss.clear();
     m_oss << dX1 << " "
@@ -1413,7 +1359,8 @@ void PdfPainter::CubicBezierTo( double dX1, double dY1, double dX2, double dY2, 
           << dY2 << " "
           << dX3 << " "
           << dY3 
-          << " c" << std::endl;
+          << " c\n";
+    m_curPath << m_oss;
     m_pCanvas->Append( m_oss.str() );
 }
 
@@ -1685,7 +1632,7 @@ void PdfPainter::Close()
 {
     PODOFO_RAISE_LOGIC_IF( !m_pCanvas, "Call SetPage() first before doing drawing operations." );
 
-    m_curPath << "h" << std::endl;
+    m_curPath << "h\n";
 
     m_pCanvas->Append( "h\n" );
 }
@@ -1737,7 +1684,7 @@ void PdfPainter::EndPath(void)
 {
     PODOFO_RAISE_LOGIC_IF( !m_pCanvas, "Call SetPage() first before doing drawing operations." );
 
-    m_curPath << "n" << std::endl;
+    m_curPath << "n\n";
 
     m_pCanvas->Append( "n\n" );
 }
@@ -1819,7 +1766,7 @@ void PdfPainter::SetCurrentStrokingColor()
         m_oss << m_curColor.GetRed()   << " "
               << m_curColor.GetGreen() << " "
               << m_curColor.GetBlue()
-              << " SC" << std::endl;
+              << " SC\n";
         m_pCanvas->Append( m_oss.str() );
     }
     else
@@ -1840,7 +1787,7 @@ void PdfPainter::SetTransformationMatrix( double a, double b, double c, double d
           << c << " "
           << d << " "
           << e << " "
-          << f << " cm" << std::endl;
+          << f << " cm\n";
 	m_oss.precision(oldPrecision);
 
     m_pCanvas->Append( m_oss.str() );
@@ -1854,7 +1801,7 @@ void PdfPainter::SetExtGState( PdfExtGState* inGState )
     
     m_oss.clear();
     m_oss << "/" << inGState->GetIdentifier().GetName()
-          << " gs" << std::endl;
+          << " gs\n";
     m_pCanvas->Append( m_oss.str() );
 }
 
@@ -1864,7 +1811,7 @@ void PdfPainter::SetRenderingIntent( char* intent )
 
     m_oss.clear();
     m_oss << "/" << intent
-          << " ri" << std::endl;
+          << " ri\n";
     m_pCanvas->Append( m_oss.str() );
 }
 
@@ -1879,7 +1826,7 @@ void PdfPainter::SetDependICCProfileColor( const PdfColor &rColor, const std::st
     m_oss << rColor.GetRed()   << " "
           << rColor.GetGreen() << " "
           << rColor.GetBlue()
-          << " sc" << std::endl;
+          << " sc\n";
     m_pCanvas->Append( m_oss.str() );
 }
 

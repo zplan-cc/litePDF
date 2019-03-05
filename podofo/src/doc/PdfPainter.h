@@ -40,9 +40,7 @@
 #include "podofo/base/PdfColor.h"
 
 #include <sstream>
-#include "fast_ostream.h"
-#include <sstream>
-#include "fast_ostream.h"
+#include "rpj_oss.h"
 
 namespace PoDoFo {
 
@@ -769,7 +767,7 @@ class PODOFO_DOC_API PdfPainter {
      * Stroke/Fill commands clear current path.
      * \returns fast_oss representing current path
      */
-    inline fast_oss &GetCurrentPath(void);
+    inline rpj_oss &GetCurrentPath(void);
 
     /** Set rgb color that depend on color space setting, "cs" tag.
      *
@@ -874,11 +872,11 @@ class PODOFO_DOC_API PdfPainter {
 
     /** temporary stream buffer 
      */
-        fast_oss m_oss;
+        rpj_oss m_oss;
 
     /** current path
      */
-        fast_oss m_curPath;
+        rpj_oss m_curPath;
 
     /** True if should use color with ICC Profile
      */
@@ -961,7 +959,7 @@ unsigned short PdfPainter::GetPrecision() const
 // -----------------------------------------------------
 // 
 // -----------------------------------------------------
-inline fast_oss &PdfPainter::GetCurrentPath(void)
+inline rpj_oss &PdfPainter::GetCurrentPath(void)
 {
 	return m_curPath;
 }

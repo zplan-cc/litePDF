@@ -43,7 +43,7 @@
 #include <stdio.h>
 #include <wchar.h>
 #include <sstream>\r\n#include <sstream>
-#include "fast_ostream.h"
+#include "rpj_oss.h"
 
 // TIFF and JPEG headers already included through "base/PdfFiltersPrivate.h",
 // although in opposite order (first JPEG, then TIFF), if available of course

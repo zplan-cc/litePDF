@@ -47,11 +47,11 @@
 #include <string.h>
 #include <limits>
 #include <sstream>
-#include "fast_ostream.h"
+#include "rpj_oss.h"
 #include "PdfArray.h"
 #include "doc/PdfDifferenceEncoding.h"
 #include <sstream>
-#include "fast_ostream.h"
+#include "rpj_oss.h"
 
 namespace PoDoFo {
 
@@ -124,8 +124,8 @@ PdfRefCountedBuffer PdfEncoding::ConvertToEncoding( const PdfString & rString, c
         const pdf_utf16be* pStr = sStr.GetUnicode();
         pdf_utf16be lUnicodeValue, lCID;
         
-        fast_oss out;
-        PdfLocaleImbue(out);
+        rpj_oss out;
+        //PdfLocaleImbue(out);
         
         while( *pStr )
         {

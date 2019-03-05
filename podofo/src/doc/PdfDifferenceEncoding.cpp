@@ -43,10 +43,10 @@
 #include <cstdlib>
 #include <cstring>
 #include <sstream>
-#include "fast_ostream.h"
+#include "rpj_oss.h"
 #include <algorithm>
 #include <sstream>
-#include "fast_ostream.h"
+#include "rpj_oss.h"
 
 namespace PoDoFo {
 
@@ -2430,7 +2430,7 @@ PdfDifferenceEncoding::PdfDifferenceEncoding( PdfObject* pObject, bool bAutoDele
 
 void PdfDifferenceEncoding::CreateID() 
 {
-    fast_oss oss;
+    rpj_oss oss;
     oss << "/DifferencesEncoding" << this->GetObject()->Reference().ObjectNumber() 
         << "_" << this->GetObject()->Reference().GenerationNumber();
 

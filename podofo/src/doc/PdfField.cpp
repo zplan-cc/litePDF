@@ -46,7 +46,7 @@
 #include "PdfXObject.h"
 
 #include <sstream>\r\n#include <sstream>
-#include "fast_ostream.h"
+#include "rpj_oss.h"
 
 namespace PoDoFo {
 
@@ -158,8 +158,8 @@ void PdfField::Init( PdfAcroForm* pParent )
     }
 
     // Create a unique fieldname, because Acrobat Reader crashes if the field has no field name 
-    fast_oss out;
-    PdfLocaleImbue(out);
+    rpj_oss out;
+//    PdfLocaleImbue(out);
     out << "podofo_field_" << m_pObject->Reference().ObjectNumber();
 }
 

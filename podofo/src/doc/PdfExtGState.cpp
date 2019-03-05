@@ -42,18 +42,18 @@
 #include "PdfPage.h"
 
 #include <sstream>
-#include "fast_ostream.h"
+#include "rpj_oss.h"
 #include <sstream>
-#include "fast_ostream.h"
+#include "rpj_oss.h"
 namespace PoDoFo {
 
 PdfExtGState::PdfExtGState( PdfVecObjects* pParent )
     : PdfElement( "ExtGState", pParent )
 {
-    fast_oss out;
+    rpj_oss out;
     // We probably aren't doing anything locale sensitive here, but it's
     // best to be sure.
-    PdfLocaleImbue(out);
+//    PdfLocaleImbue(out);
 
     // Implementation note: the identifier is always
     // Prefix+ObjectNo. Prefix is /Ft for fonts.
@@ -66,10 +66,10 @@ PdfExtGState::PdfExtGState( PdfVecObjects* pParent )
 PdfExtGState::PdfExtGState( PdfDocument* pParent )
     : PdfElement( "ExtGState", pParent )
 {
-    fast_oss out;
+    rpj_oss out;
     // We probably aren't doing anything locale sensitive here, but it's
     // best to be sure.
-    PdfLocaleImbue(out);
+//    PdfLocaleImbue(out);
 
     // Implementation note: the identifier is always
     // Prefix+ObjectNo. Prefix is /Ft for fonts.

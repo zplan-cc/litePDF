@@ -32,7 +32,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <sstream>\r\n#include <sstream>
-#include "fast_ostream.h"
+#include "rpj_oss.h"
 
 #ifdef PODOFO_HAVE_OPENSSL
 // SHA-256

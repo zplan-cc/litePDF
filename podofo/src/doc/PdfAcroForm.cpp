@@ -41,9 +41,9 @@
 #include "PdfFont.h"
 
 #include <sstream>
-#include "fast_ostream.h"
+#include "rpj_oss.h"
 #include <sstream>
-#include "fast_ostream.h"
+#include "rpj_oss.h"
 
 namespace PoDoFo {
 
@@ -101,8 +101,8 @@ void PdfAcroForm::Init( EPdfAcroFormDefaulAppearance eDefaultAppearance )
         pFontDict->GetDictionary().AddKey( pFont->GetIdentifier(), pFont->GetObject()->Reference() );
         
         // Create DA key
-        fast_oss oss;
-        PdfLocaleImbue(oss);
+        rpj_oss oss;
+        //PdfLocaleImbue(oss);
         oss << "0 0 0 rg /" << pFont->GetIdentifier().GetName() << " 12 Tf";
         this->GetObject()->GetDictionary().AddKey( PdfName("DA"), PdfString( oss.str() ) );
     }

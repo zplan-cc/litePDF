@@ -499,7 +499,7 @@ void PdfFlateFilter::BeginEncodeImpl()
     m_stream.zfree    = Z_NULL;
     m_stream.opaque   = Z_NULL;
 
-    if( deflateInit( &m_stream, Z_DEFAULT_COMPRESSION ) )
+    if (deflateInit(&m_stream, Z_BEST_SPEED))
     {
         PODOFO_RAISE_ERROR( ePdfError_Flate );
     }

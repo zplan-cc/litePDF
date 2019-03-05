@@ -36,7 +36,7 @@
 #include <cstdarg>
 #include <fstream>
 #include <sstream>\r\n#include <sstream>
-#include "fast_ostream.h"
+#include "rpj_oss.h"
 #include "PdfDefinesPrivate.h"
 
 namespace PoDoFo {

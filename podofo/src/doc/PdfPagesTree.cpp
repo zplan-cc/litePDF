@@ -521,7 +521,7 @@ PdfObject* PdfPagesTree::GetPageNodeFromArray( int nPageNum, const PdfArray & rK
             if ( std::find( rLstParents.begin(), rLstParents.end(), pgObject )
                 != rLstParents.end() ) // cycle in parent list detected, fend
             { // off security vulnerability CVE-2017-8054 (infinite recursion)
-                fast_oss oss;
+                rpj_oss oss;
                 oss << "Cycle in page tree: child in /Kids array of object "
                     << ( *(rLstParents.rbegin()) )->Reference().ToString()
                     << " back-references to object " << pgObject->Reference()

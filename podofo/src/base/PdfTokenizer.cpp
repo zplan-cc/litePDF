@@ -45,12 +45,12 @@
 
 #include <limits>
 #include <sstream>
-#include "fast_ostream.h"
+#include "rpj_oss.h"
 
 #include <stdlib.h>
 #include <string.h>
 #include <sstream>
-#include "fast_ostream.h"
+#include "rpj_oss.h"
 
 #define PDF_BUFFER 4096
 
@@ -538,7 +538,7 @@ EPdfDataType PdfTokenizer::DetermineDataType( const char* pszToken, EPdfTokenTyp
 
     if( false )
     {
-        fast_oss ss;
+        rpj_oss ss;
 #if defined(_MSC_VER)  &&  _MSC_VER <= 1200
         ss << "Got unexpected PDF data in" << __FILE__ << ", line " << __LINE__
 #else

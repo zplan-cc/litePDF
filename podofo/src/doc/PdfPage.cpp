@@ -248,7 +248,7 @@ const PdfObject* PdfPage::GetInheritedKeyFromObject( const char* inKey, const Pd
         pObj = inObject->GetIndirectKey( "Parent" );
         if( pObj == inObject )
         {
-            fast_oss oss;
+            rpj_oss oss;
             oss << "Object " << inObject->Reference().ObjectNumber() << " "
                 << inObject->Reference().GenerationNumber() << " references itself as Parent";
             PODOFO_RAISE_ERROR_INFO( ePdfError_BrokenFile, oss.str().c_str() );

@@ -45,17 +45,17 @@
 #include "PdfFunction.h"
 
 #include <sstream>\r\n#include <sstream>
-#include "fast_ostream.h"
+#include "rpj_oss.h"
 
 namespace PoDoFo {
 
 PdfShadingPattern::PdfShadingPattern( EPdfShadingPatternType eShadingType, PdfVecObjects* pParent )
     : PdfElement( "Pattern", pParent )
 {
-    fast_oss out;
+    rpj_oss out;
     // We probably aren't doing anything locale sensitive here, but it's
     // best to be sure.
-    PdfLocaleImbue(out);
+    //PdfLocaleImbue(out);
 
     // Implementation note: the identifier is always
     // Prefix+ObjectNo. Prefix is /Ft for fonts.
@@ -68,10 +68,10 @@ PdfShadingPattern::PdfShadingPattern( EPdfShadingPatternType eShadingType, PdfVe
 PdfShadingPattern::PdfShadingPattern( EPdfShadingPatternType eShadingType, PdfDocument* pParent )
     : PdfElement( "Pattern", pParent )
 {
-    fast_oss out;
+    rpj_oss out;
     // We probably aren't doing anything locale sensitive here, but it's
     // best to be sure.
-    PdfLocaleImbue(out);
+    //PdfLocaleImbue(out);
 
     // Implementation note: the identifier is always
     // Prefix+ObjectNo. Prefix is /Ft for fonts.

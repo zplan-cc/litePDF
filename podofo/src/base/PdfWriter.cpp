@@ -52,7 +52,7 @@
 
 #include <iostream>
 #include <sstream>
-#include "fast_ostream.h"
+#include "rpj_oss.h"
 #include <stdlib.h>
 
 namespace PoDoFo {
@@ -713,10 +713,10 @@ void PdfWriter::CreateFileIdentifier( PdfString & identifier, const PdfObject* p
         }
         else
         {
-            fast_oss oss;
+            rpj_oss oss;
             oss << "Error while retrieving info dictionary: " 
                 << rRef.ObjectNumber() << " " 
-                << rRef.GenerationNumber() << " R" << std::endl;
+                << rRef.GenerationNumber() << " R\n";
             PODOFO_RAISE_ERROR_INFO( ePdfError_InvalidHandle, oss.str().c_str() );
         }
     }

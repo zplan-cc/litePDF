@@ -119,7 +119,7 @@ void PdfObjectStreamParserObject::ReadObjectsFromStream( char* pBuffer, pdf_long
 #if defined(PODOFO_VERBOSE_DEBUG)
         std::cerr << "ReadObjectsFromStream STREAM=" << m_pParser->Reference().ToString() <<
 			", OBJ=" << lObj <<
-			", " << (should_read ? "read" : "skipped") << std::endl;
+			", " << (should_read ? "read" : "skipped") << "\n";
 #endif
 		if (should_read)
         {

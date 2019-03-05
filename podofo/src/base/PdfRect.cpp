@@ -39,7 +39,7 @@
 
 #include <iostream>
 #include <sstream>\r\n#include <sstream>
-#include "fast_ostream.h"
+#include "rpj_oss.h"
 #include <iomanip>
 
 static void NormalizeCoordinates( double &coord1, double &coord2 );

@@ -48,7 +48,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <sstream>\r\n#include <sstream>
-#include "fast_ostream.h"
+#include "rpj_oss.h"
 
 using namespace std;
 

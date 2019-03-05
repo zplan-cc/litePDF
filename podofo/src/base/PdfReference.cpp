@@ -37,9 +37,9 @@
 #include "PdfDefinesPrivate.h"
 
 #include <sstream>
-#include "fast_ostream.h"
+#include "rpj_oss.h"
 #include <sstream>
-#include "fast_ostream.h"
+#include "rpj_oss.h"
 
 namespace PoDoFo {
 
@@ -58,7 +58,7 @@ void PdfReference::Write( PdfOutputDevice* pDevice, EPdfWriteMode eWriteMode, co
 
 const std::string PdfReference::ToString() const
 {
-    fast_oss out;
+    rpj_oss out;
     out << m_nObjectNo << " " << m_nGenerationNo << " R";
     return out.str();
 }
